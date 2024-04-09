@@ -1,0 +1,4161 @@
+fileFormatVersion: 2
+guid: 974bc7a11b5dc814fb9693640a7e1d95
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RPG Assets Transparent_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 448
+        width: 41
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bd6a3b9a18439d4799e00858f23a88d
+      internalID: 1662340716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_1
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 452
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 706b99e863564834b92ad7bc305591b7
+      internalID: 156547305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_2
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 456
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ecfd84737dfd34a91e2498f8da678e
+      internalID: 692979449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_3
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 456
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 532ed7119621afd40a5f097532239c45
+      internalID: 61931483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_4
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 455
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d45838de2e027048baa4c1ab4844606
+      internalID: 2106879840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_5
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 455
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c06d2e9a5ab1b744ae5e353646a3d00
+      internalID: 1106113464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_6
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 455
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16f2d04a544d2d34d93a3b5d7f56975f
+      internalID: 984800998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_7
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 439
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c64a7be39bb1c124b943ed7856c0d6aa
+      internalID: -1522924233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_8
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 460
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d62dd3e04e8e7e448231766ae616a0f
+      internalID: 313497925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_9
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 460
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82b306ab0de5d054aaaddfa230e70381
+      internalID: -1201128407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_10
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 440
+        width: 66
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50b93f9ebf5414a4686b05c459815f82
+      internalID: -2104243855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_11
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 454
+        width: 37
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9347845bbc0473f4484c90a7dcdb1267
+      internalID: -604420633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_12
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 454
+        width: 37
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fbe59a669acc1f43add1485c011f5de
+      internalID: -703209127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_13
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 449
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6eca2745ce751e488ff9e2a7edea7d8
+      internalID: 1761192788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_14
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 445
+        width: 65
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93d32da016b99dc45923cfcfa93d74df
+      internalID: 1851938871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_15
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 439
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b37425b7e90a6da4f845488b412d4fa3
+      internalID: -642580498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_16
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 440
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0219f56eff4d7104eb0193ef90f6c962
+      internalID: 2057719680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_17
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 440
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4962f175e73c8c047bb3a8243de43586
+      internalID: 1019740434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_18
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 439
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e423ad93c9f2c2d4d9324670f0be4f0a
+      internalID: -251893124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_19
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 439
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36a0460685f223748bfc9e4efe9f54a2
+      internalID: 945411584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_20
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 439
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0e8b57e14ab8fe4eab5838dd74b397c
+      internalID: 270339740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_21
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 448
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f003eb894146244fb95169894bd0ae2
+      internalID: -2054900266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_22
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 448
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68ffbf1e3e8f1914b85ccc05de7deb68
+      internalID: -727062601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_23
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 442
+        width: 96
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df0f4d931e62d5e42a3274cbb40e6a50
+      internalID: -1379113991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_24
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 443
+        width: 37
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b21c9b11e93dd0343a6c521eb1c2f703
+      internalID: 905552605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_25
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 443
+        width: 37
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1632d41ba0b653841bf215a6e716616f
+      internalID: -1592379140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_26
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 436
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 227363bf719f0c6408dd07f1baf6712c
+      internalID: 1149271326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_27
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 433
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67989b19c23bafe42b61c295e6614d96
+      internalID: 632848982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_28
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 431
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84abe05ada20af2479e20556f17ad66c
+      internalID: -169639359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_29
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 422
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ed340a8610e8824d95cc9d659364dd3
+      internalID: 1533800210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_30
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 409
+        width: 54
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91a41888e669e9c4e9e97aedf885e334
+      internalID: 1839896562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_31
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 409
+        width: 53
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 439b04608fd2fe549803698d766454c1
+      internalID: -589172474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_32
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 432
+        width: 22
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba0ec7ed6b031b84f84c410250796b58
+      internalID: 180707399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_33
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 418
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abd6da94c7d69de46955c6f1e50f42b8
+      internalID: 1303686654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_34
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 423
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca978cc7eb2b5a74d964d5ed71fc2315
+      internalID: 793218124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_35
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 426
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 240e425f4cd8ad444b1d07d099302ab2
+      internalID: 497297043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_36
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 423
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 302d8cdd35404eb4db48424767f0df25
+      internalID: -25032717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_37
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 428
+        width: 65
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 459bd1ded8dd02f42a37c9fdba797ccd
+      internalID: -785079808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_38
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 409
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 682809b351d26be4d92e250d293c2bda
+      internalID: -1582323832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_39
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 409
+        width: 26
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80a78889ddc73ee4087fdc4d3df7f34c
+      internalID: 2023355182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_40
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 420
+        width: 42
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78eda3ff7b2cf3c4ba02bc946b64ed6a
+      internalID: 374852189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_41
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 417
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c96bbd3c351f42468563208e99b88d0
+      internalID: -1959731198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_42
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 414
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bb78cd3b1abffe41815c978b5f26152
+      internalID: 1373449244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_43
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 412
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9c9d31307dd63d4692acd4f9f7b2180
+      internalID: 940622795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_44
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 420
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9376212600e0db14db76e00870ad5eed
+      internalID: -1500467349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_45
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 410
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90f0920a503023c4e872e49532b048a7
+      internalID: 514181509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_46
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 411
+        width: 65
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78ec7a0b57b23c7469b8db91ec99dc81
+      internalID: 1338460174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_47
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 384
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 955316d568412b343b1e4291d241cdcc
+      internalID: -85525335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_48
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 384
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3450bb15e1f28241bc8d235b2e1fea2
+      internalID: -1173205825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_49
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 400
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a9a7dd24b9b4dc46984c042a002b796
+      internalID: 438830526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_50
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 400
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b600daabd17587c4c8ebed187f1b7a23
+      internalID: 1431476217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_51
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 400
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b004d26d1b2cc84bb72fe6b81116c59
+      internalID: -2145905774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_52
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 358
+        width: 112
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef15d6a0641d38c48998ccef7a51dd17
+      internalID: 241371903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_53
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 397
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2080e15da3bb88a48b530703b405cdcb
+      internalID: 2043861363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_54
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 398
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 948eb0103b2e8294a9298500baada4d3
+      internalID: 1806734575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_55
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 378
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcde991291ce4ae4da68ca789e8244de
+      internalID: 645196688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_56
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 391
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a11401553e773e04ab71ee55d1708169
+      internalID: -1545980794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_57
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 404
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f446804c44068e4e80250e9fa7b3b27
+      internalID: -1585071740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_58
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 391
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 366d7f5608cfe1541945bc65a89e4a70
+      internalID: -1031949752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_59
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 396
+        width: 43
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 862735691a639164f84c0381c7d7876e
+      internalID: -1593967250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_60
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 398
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a26e26f3e12a38b40a1a58478c3437bd
+      internalID: 2082637428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_61
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 398
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c697ad5a49cbb8a468fff3010f76ff25
+      internalID: -1406556410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_62
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 368
+        width: 68
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7482aa2c87a3f04ab5d782448b799b7
+      internalID: -1552936708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_63
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 373
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bf534a70a3817e4f9153424247429d4
+      internalID: -274274341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_64
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 378
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e39fbcf20a3ef194dab4801c76c5cc04
+      internalID: 1372228576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_65
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 382
+        width: 50
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faaffec116e6eff418f2ee944a8f3c97
+      internalID: 1869078011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_66
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 379
+        width: 50
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfa8a870e672fec4f97bc58c6b9cfba6
+      internalID: -480177038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_67
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 378
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 985820eac647e154c92aea8b83ab9662
+      internalID: 1759919421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_68
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 375
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32b903c5c507ee441978ff2bfed59cec
+      internalID: 1671773209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_69
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 383
+        width: 43
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90f6dd3a5e2f37b4e8a0d5fa81014241
+      internalID: 1342716382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_70
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 385
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76e2de2d4cd125945aaf75c909d421f0
+      internalID: -1868902706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_71
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 386
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 553878353e6f77c4b9108b6413056053
+      internalID: -9313684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_72
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 385
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 703a06d34d9b67141bc3e4c1f45aaa32
+      internalID: 2087279365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_73
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 385
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f88ed48ffb88e2a4ba3310f0fc08a877
+      internalID: 2146654452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_74
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 362
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdbf2a2087509d24399d92f4eb8ed284
+      internalID: -67917262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_75
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 361
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86bdb8079e9145d4584edd5232d4e32e
+      internalID: -919675605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_76
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 359
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6fdf215d694b08439f8d61fae503f33
+      internalID: 1742832715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_77
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 367
+        width: 28
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ebea5013c98d284ea7a099161ba7704
+      internalID: -1049379389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_78
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 347
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 972e3bb6d51f9be4eb8ab9b7fb833550
+      internalID: -1033150895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_79
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 367
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82522387e6f5faf4ba62fa915f9d83e8
+      internalID: -879280204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_80
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 368
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63f2a94055d84964d97986f5fe89e033
+      internalID: 1320213413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_81
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 372
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5c6b6073ef34024496fe0ec623419a4
+      internalID: 717038056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_82
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 372
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3e93fcded0781d41be9c873c156d004
+      internalID: 1707574979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_83
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 364
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9c925cd5ada7b940a793aae7c0594f3
+      internalID: 181491304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_84
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 357
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c168cff63b3ffd5418ee6754bb63e83b
+      internalID: 521307793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_85
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 356
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5017f647f6fa5e04a8f6722c5b72cfe5
+      internalID: -1806884327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_86
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 358
+        width: 30
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0129be3889ac0664e919ebbac88b10bc
+      internalID: 1241946418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_87
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 354
+        width: 96
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76ee0a5f1640d2641bc19277f0ed7e6f
+      internalID: -1335759416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_88
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 349
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f9a051127f9e754fbc599007c696d64
+      internalID: -1426449789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_89
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 359
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54e5cac4f4eea08409510c85910b93e9
+      internalID: -1183722441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_90
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 359
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5797a5486cbe821469e00383513b2944
+      internalID: -256598740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_91
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 342
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75c46a8dd01c5d045ab3e4ba54d2769c
+      internalID: 598658122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_92
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 342
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da995ba955e438a489f76e9ce078a3da
+      internalID: -1214070678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_93
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 340
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26e1a9c9bb274b24d989bd649b328c7d
+      internalID: -801723223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_94
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 351
+        width: 53
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d262ea1147737941847843caac48a7d
+      internalID: 31754329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_95
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 346
+        width: 43
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fc6bfba3d495024094aee626c833a6a
+      internalID: 498379029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_96
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 346
+        width: 43
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb7f74315111ee14294182ec7082d666
+      internalID: -1910214473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_97
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 346
+        width: 33
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90a070e5c074a384f9db1bfe4d2ba215
+      internalID: -368543322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_98
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 345
+        width: 25
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7c8ea7af57c68542a6305b04276c613
+      internalID: -1413242206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_99
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 344
+        width: 36
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81ec787d635f15a4f9b044fac2ce749c
+      internalID: -36260935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_100
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 343
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45623e1a431b2bb46915f88cec73f291
+      internalID: 31612448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_101
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 343
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbe0ff1055d6de546a10291051ef46e1
+      internalID: -3307267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_102
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 348
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 210f1a3b9b9c8904c8155888c198ed0f
+      internalID: -28826781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_103
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 346
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fbe4d552dac09741b2b9723a2ae1f45
+      internalID: 1142681061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_104
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 346
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad1ae0b27cae68e4e95377a0556c690c
+      internalID: 225218902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_105
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 328
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88fb4ca3f895a2542a770a6aad597fed
+      internalID: -1065834721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_106
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 328
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dab3946cd3194e74c822dda5290883f9
+      internalID: 1180736730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_107
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 305
+        width: 40
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09d5e95d137297740bfc9ef1c40600b6
+      internalID: -1515305739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_108
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 320
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd94045f24fb3d745843af09606e5fb2
+      internalID: -830069135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_109
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 191
+        width: 409
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c56a1391af192e14ebc79a148ddc7cf9
+      internalID: 1640196280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_110
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 325
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c97066f4f7c8dfc4fb3d9320cca7d8ac
+      internalID: -596843164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_111
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 325
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00c947ce3866ab143a309319eb0ddf50
+      internalID: -956460534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_112
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 325
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07b10756a595e434892d09bf961f7b0c
+      internalID: 927032155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_113
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 325
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6ff9be1cf4dd1d49bcac04f551f8f76
+      internalID: 1110291914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_114
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 309
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4694c5f462d76db42abe20c59fb81578
+      internalID: 974560497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_115
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 309
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c8a05883baa7ca48a46bd147c044d85
+      internalID: -1082786736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_116
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 309
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97373493c2edbc04892ed792eaa32b4e
+      internalID: 1592795943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_117
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 309
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c47fed5619bdd64f8f6a9406872c09b
+      internalID: 1192924370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_118
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 267
+        width: 40
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17b92f4ec5dd79946b34c9644b72959e
+      internalID: -1356222933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_119
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 268
+        width: 42
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 612e72708cf6911469c9f971ffd7f022
+      internalID: 1577543767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_120
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 268
+        width: 42
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 425b7cfe8bef5eb44a92eb082bbd6fe2
+      internalID: 56856906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_121
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 293
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8f0e8f415b18224c83d1930b80af51c
+      internalID: 1208930474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_122
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 293
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef960e7d72d8cbf4083c189b50a500fb
+      internalID: -668487444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_123
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 293
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed5d1dcc1f39be847bbfea0b4679b4fa
+      internalID: 988916008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_124
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 293
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 573552e4cd50079448194ef0a0bfd479
+      internalID: 1733170915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_125
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 277
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 760f4965daee31841b13187f21cf2fb7
+      internalID: -772175503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_126
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 277
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17a67cc3b4587864ab4d8fd2fa362ca8
+      internalID: -590078757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_127
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 277
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5397f238a7dac644a9759d3c891c0ef4
+      internalID: 1075914441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_128
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 277
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a39cbfaa9e206be418a9370219b2d07e
+      internalID: 247648087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_129
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 264
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7481512468025044aa3b80a7b6c317ea
+      internalID: -1801179812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_130
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 264
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc76b31ab4b8edf41b2333444169d2dd
+      internalID: -394190437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_131
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 261
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aa1b9760103625498f7518c9c568cb6
+      internalID: -591156115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_132
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 261
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d545390e84f93049a6dd26c12f3b855
+      internalID: -2107583496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_133
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 191
+        width: 99
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26afc25567904f44ca47248236c7dcef
+      internalID: -727620205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_134
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 254
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1e62ae8ed0f6744a939396a1ea074d7
+      internalID: 1299618715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_135
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 254
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e3c7a75b2e926041b8942afbbec37b3
+      internalID: -1870475092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_136
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 231
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac587f292bdbc2547aac74a0562905ff
+      internalID: 358218062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_137
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 229
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bed72289a189464786ee4afcd26c006
+      internalID: -83270304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_138
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 206
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d668523ea8fe02d4b900574cc7bc2583
+      internalID: -1937079824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_139
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 206
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c472fc86aa5e47d4daec770df3d98b0a
+      internalID: -1021876088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_140
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 126
+        width: 71
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82f931b9256107549ae66d1f0633783f
+      internalID: 2140090399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_141
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 183
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5e7bad9a71219e4c9134027031c5f0a
+      internalID: -1608552854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_142
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 145
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c915f1bdc11fa4d4c83d3a81dc5f64ed
+      internalID: 1818276417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_143
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 0
+        width: 199
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cf60db04612ca140a621b2d80d97032
+      internalID: 519074372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_144
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 154
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 392d8af2e10404b45ab853b7e0707aa5
+      internalID: 1832320574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_145
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 152
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e49d8dfdd670dc14cbced6dfb9691e3f
+      internalID: 1524875420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_146
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 94
+        width: 51
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95a5bd6c3837a234aa27153f819092fa
+      internalID: 1629884940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_147
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 158
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f339be15394c3e4a8da57914c0b2241
+      internalID: 893451350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_148
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 129
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6506fdc141e680b46be79818121803bb
+      internalID: -57366587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_149
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 141
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a880dca26e679964ba6487c2f2169e51
+      internalID: -1298168420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_150
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 124
+        width: 43
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb7ae5d2640a77844a3320c6414e24e7
+      internalID: -173233440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_151
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 106
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dc2341376bbd824fba30e82757f1f86
+      internalID: -937893623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_152
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 124
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99c79365424c8f34b931adbed50e4f35
+      internalID: 762882339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_153
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 95
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d9fe70aad4e5df418fd8537ddd27c2f
+      internalID: 1675590406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_154
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 95
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f78fd15d3a799e4419943eb0b3af4437
+      internalID: 342104118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_155
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 106
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff069bd20f15c80418697487b96c93a3
+      internalID: 499414773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_156
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 106
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 972faea98b1e1a84284bf0e07c61fe06
+      internalID: 1928901752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_157
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 106
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8514145ef21b11240966d7b653187db2
+      internalID: -1571648630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_158
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 106
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b5de5d0c3608374595830b01c7cb558
+      internalID: -1121204620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_159
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 105
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8964f5ef0d0410489131d168991b093
+      internalID: -1634900320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_160
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 68
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 257ec1e69a20ce14797214889128c238
+      internalID: -2065381655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_161
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 59
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9885db64dd587d2459dd6240b18795fe
+      internalID: -2046347038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_162
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 82
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 382372eb58fea2648b0354a2e69e4b80
+      internalID: 875490292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_163
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 82
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e369b419ae371c84689d1331085b7b89
+      internalID: -1877873774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_164
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 87
+        width: 43
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b6ec233be20a15429fc38e82c930ab4
+      internalID: 1919732162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_165
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 68
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac7c442085f3fa240a94a57b569d2fc3
+      internalID: -2092211153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_166
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 88
+        width: 36
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd1b49ab7348767488d67cec7b097740
+      internalID: -359118373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_167
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 69
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd7e3a6134d8c7a449385d5b80cfbd09
+      internalID: -2095756570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_168
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 66
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c757f0c536c3c704abf41a304f823499
+      internalID: 1636276465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_169
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 74
+        width: 43
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a32e751de61c0b340871b255975a9bb9
+      internalID: -584669691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_170
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 2
+        width: 216
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc14f12977e3f2248a60bae5f09a8fd4
+      internalID: 128679891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_171
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 57
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5980096d20e8a3e4e97a6ec60ce61a41
+      internalID: -190956395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_172
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 13
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f28b6cbae3e7162499cce9f20c70b687
+      internalID: 2094417504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_173
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 39
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb15f91cd8f49f74490df297727a48dc
+      internalID: 430280162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_174
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 30
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f985c7015729c742af348448451ab3c
+      internalID: 326037951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_175
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 3
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c81be7529321d1e4680f5c3110bda84e
+      internalID: -2040314822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_176
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 17
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38841cb7f57db2e4c99700abe67491f2
+      internalID: 1613435098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_177
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 17
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 252e10a4a9bdbb246b4a942209b443ce
+      internalID: -1217181410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_178
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 22
+        width: 43
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 656269cd9763be84992bca8cef6e1879
+      internalID: 275105668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_179
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 5
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54b539f9f52c5574dba890dada67aa96
+      internalID: -77585646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_180
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 4
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d73d91cc4d28084981a99f63a0dcc2f
+      internalID: 2128416490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_181
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 1
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17ff422c65c10874ca540d03bd11edc0
+      internalID: 1886555196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RPG Assets Transparent_182
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 9
+        width: 43
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c45bebf4fe97e64085db22d1d2585ec
+      internalID: -1366529958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      RPG Assets Transparent_0: 1662340716
+      RPG Assets Transparent_1: 156547305
+      RPG Assets Transparent_10: -2104243855
+      RPG Assets Transparent_100: 31612448
+      RPG Assets Transparent_101: -3307267
+      RPG Assets Transparent_102: -28826781
+      RPG Assets Transparent_103: 1142681061
+      RPG Assets Transparent_104: 225218902
+      RPG Assets Transparent_105: -1065834721
+      RPG Assets Transparent_106: 1180736730
+      RPG Assets Transparent_107: -1515305739
+      RPG Assets Transparent_108: -830069135
+      RPG Assets Transparent_109: 1640196280
+      RPG Assets Transparent_11: -604420633
+      RPG Assets Transparent_110: -596843164
+      RPG Assets Transparent_111: -956460534
+      RPG Assets Transparent_112: 927032155
+      RPG Assets Transparent_113: 1110291914
+      RPG Assets Transparent_114: 974560497
+      RPG Assets Transparent_115: -1082786736
+      RPG Assets Transparent_116: 1592795943
+      RPG Assets Transparent_117: 1192924370
+      RPG Assets Transparent_118: -1356222933
+      RPG Assets Transparent_119: 1577543767
+      RPG Assets Transparent_12: -703209127
+      RPG Assets Transparent_120: 56856906
+      RPG Assets Transparent_121: 1208930474
+      RPG Assets Transparent_122: -668487444
+      RPG Assets Transparent_123: 988916008
+      RPG Assets Transparent_124: 1733170915
+      RPG Assets Transparent_125: -772175503
+      RPG Assets Transparent_126: -590078757
+      RPG Assets Transparent_127: 1075914441
+      RPG Assets Transparent_128: 247648087
+      RPG Assets Transparent_129: -1801179812
+      RPG Assets Transparent_13: 1761192788
+      RPG Assets Transparent_130: -394190437
+      RPG Assets Transparent_131: -591156115
+      RPG Assets Transparent_132: -2107583496
+      RPG Assets Transparent_133: -727620205
+      RPG Assets Transparent_134: 1299618715
+      RPG Assets Transparent_135: -1870475092
+      RPG Assets Transparent_136: 358218062
+      RPG Assets Transparent_137: -83270304
+      RPG Assets Transparent_138: -1937079824
+      RPG Assets Transparent_139: -1021876088
+      RPG Assets Transparent_14: 1851938871
+      RPG Assets Transparent_140: 2140090399
+      RPG Assets Transparent_141: -1608552854
+      RPG Assets Transparent_142: 1818276417
+      RPG Assets Transparent_143: 519074372
+      RPG Assets Transparent_144: 1832320574
+      RPG Assets Transparent_145: 1524875420
+      RPG Assets Transparent_146: 1629884940
+      RPG Assets Transparent_147: 893451350
+      RPG Assets Transparent_148: -57366587
+      RPG Assets Transparent_149: -1298168420
+      RPG Assets Transparent_15: -642580498
+      RPG Assets Transparent_150: -173233440
+      RPG Assets Transparent_151: -937893623
+      RPG Assets Transparent_152: 762882339
+      RPG Assets Transparent_153: 1675590406
+      RPG Assets Transparent_154: 342104118
+      RPG Assets Transparent_155: 499414773
+      RPG Assets Transparent_156: 1928901752
+      RPG Assets Transparent_157: -1571648630
+      RPG Assets Transparent_158: -1121204620
+      RPG Assets Transparent_159: -1634900320
+      RPG Assets Transparent_16: 2057719680
+      RPG Assets Transparent_160: -2065381655
+      RPG Assets Transparent_161: -2046347038
+      RPG Assets Transparent_162: 875490292
+      RPG Assets Transparent_163: -1877873774
+      RPG Assets Transparent_164: 1919732162
+      RPG Assets Transparent_165: -2092211153
+      RPG Assets Transparent_166: -359118373
+      RPG Assets Transparent_167: -2095756570
+      RPG Assets Transparent_168: 1636276465
+      RPG Assets Transparent_169: -584669691
+      RPG Assets Transparent_17: 1019740434
+      RPG Assets Transparent_170: 128679891
+      RPG Assets Transparent_171: -190956395
+      RPG Assets Transparent_172: 2094417504
+      RPG Assets Transparent_173: 430280162
+      RPG Assets Transparent_174: 326037951
+      RPG Assets Transparent_175: -2040314822
+      RPG Assets Transparent_176: 1613435098
+      RPG Assets Transparent_177: -1217181410
+      RPG Assets Transparent_178: 275105668
+      RPG Assets Transparent_179: -77585646
+      RPG Assets Transparent_18: -251893124
+      RPG Assets Transparent_180: 2128416490
+      RPG Assets Transparent_181: 1886555196
+      RPG Assets Transparent_182: -1366529958
+      RPG Assets Transparent_19: 945411584
+      RPG Assets Transparent_2: 692979449
+      RPG Assets Transparent_20: 270339740
+      RPG Assets Transparent_21: -2054900266
+      RPG Assets Transparent_22: -727062601
+      RPG Assets Transparent_23: -1379113991
+      RPG Assets Transparent_24: 905552605
+      RPG Assets Transparent_25: -1592379140
+      RPG Assets Transparent_26: 1149271326
+      RPG Assets Transparent_27: 632848982
+      RPG Assets Transparent_28: -169639359
+      RPG Assets Transparent_29: 1533800210
+      RPG Assets Transparent_3: 61931483
+      RPG Assets Transparent_30: 1839896562
+      RPG Assets Transparent_31: -589172474
+      RPG Assets Transparent_32: 180707399
+      RPG Assets Transparent_33: 1303686654
+      RPG Assets Transparent_34: 793218124
+      RPG Assets Transparent_35: 497297043
+      RPG Assets Transparent_36: -25032717
+      RPG Assets Transparent_37: -785079808
+      RPG Assets Transparent_38: -1582323832
+      RPG Assets Transparent_39: 2023355182
+      RPG Assets Transparent_4: 2106879840
+      RPG Assets Transparent_40: 374852189
+      RPG Assets Transparent_41: -1959731198
+      RPG Assets Transparent_42: 1373449244
+      RPG Assets Transparent_43: 940622795
+      RPG Assets Transparent_44: -1500467349
+      RPG Assets Transparent_45: 514181509
+      RPG Assets Transparent_46: 1338460174
+      RPG Assets Transparent_47: -85525335
+      RPG Assets Transparent_48: -1173205825
+      RPG Assets Transparent_49: 438830526
+      RPG Assets Transparent_5: 1106113464
+      RPG Assets Transparent_50: 1431476217
+      RPG Assets Transparent_51: -2145905774
+      RPG Assets Transparent_52: 241371903
+      RPG Assets Transparent_53: 2043861363
+      RPG Assets Transparent_54: 1806734575
+      RPG Assets Transparent_55: 645196688
+      RPG Assets Transparent_56: -1545980794
+      RPG Assets Transparent_57: -1585071740
+      RPG Assets Transparent_58: -1031949752
+      RPG Assets Transparent_59: -1593967250
+      RPG Assets Transparent_6: 984800998
+      RPG Assets Transparent_60: 2082637428
+      RPG Assets Transparent_61: -1406556410
+      RPG Assets Transparent_62: -1552936708
+      RPG Assets Transparent_63: -274274341
+      RPG Assets Transparent_64: 1372228576
+      RPG Assets Transparent_65: 1869078011
+      RPG Assets Transparent_66: -480177038
+      RPG Assets Transparent_67: 1759919421
+      RPG Assets Transparent_68: 1671773209
+      RPG Assets Transparent_69: 1342716382
+      RPG Assets Transparent_7: -1522924233
+      RPG Assets Transparent_70: -1868902706
+      RPG Assets Transparent_71: -9313684
+      RPG Assets Transparent_72: 2087279365
+      RPG Assets Transparent_73: 2146654452
+      RPG Assets Transparent_74: -67917262
+      RPG Assets Transparent_75: -919675605
+      RPG Assets Transparent_76: 1742832715
+      RPG Assets Transparent_77: -1049379389
+      RPG Assets Transparent_78: -1033150895
+      RPG Assets Transparent_79: -879280204
+      RPG Assets Transparent_8: 313497925
+      RPG Assets Transparent_80: 1320213413
+      RPG Assets Transparent_81: 717038056
+      RPG Assets Transparent_82: 1707574979
+      RPG Assets Transparent_83: 181491304
+      RPG Assets Transparent_84: 521307793
+      RPG Assets Transparent_85: -1806884327
+      RPG Assets Transparent_86: 1241946418
+      RPG Assets Transparent_87: -1335759416
+      RPG Assets Transparent_88: -1426449789
+      RPG Assets Transparent_89: -1183722441
+      RPG Assets Transparent_9: -1201128407
+      RPG Assets Transparent_90: -256598740
+      RPG Assets Transparent_91: 598658122
+      RPG Assets Transparent_92: -1214070678
+      RPG Assets Transparent_93: -801723223
+      RPG Assets Transparent_94: 31754329
+      RPG Assets Transparent_95: 498379029
+      RPG Assets Transparent_96: -1910214473
+      RPG Assets Transparent_97: -368543322
+      RPG Assets Transparent_98: -1413242206
+      RPG Assets Transparent_99: -36260935
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

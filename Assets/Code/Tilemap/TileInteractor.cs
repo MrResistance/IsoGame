@@ -17,6 +17,6 @@ public class TileInteractor : MonoBehaviour
 
         Vector3Int cellPosition = m_tilemap.WorldToCell(worldPosition);
 
-        m_currentCharacter.MoveToPoint(m_tilemap.CellToWorld(cellPosition));
+        //m_currentCharacter.MoveToPoint(m_tilemap.CellToWorld(cellPosition));
     }
 }
