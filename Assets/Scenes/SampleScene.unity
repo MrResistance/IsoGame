@@ -381,6 +381,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: fef6a023ad094da4fa609111b6173a05, type: 3}
+    - target: {fileID: 5755602365049517967, guid: 204ab6633a51eee4e9e9903e03b8f0d2, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7146173391430565234, guid: 204ab6633a51eee4e9e9903e03b8f0d2, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -744,7 +748,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 4.33, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -22721,6 +22725,7 @@ MonoBehaviour:
   m_tileInteractor: {fileID: 561350883}
   m_move: {fileID: 168445465}
   m_attack: {fileID: 926905161}
+  m_endTurn: {fileID: 1925965999}
 --- !u!1 &926905156
 GameObject:
   m_ObjectHideFlags: 0
@@ -23121,7 +23126,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 31
 --- !u!114 &1285553574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23349,6 +23354,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  m_cameraController: {fileID: 519420033}
   m_localPlayerTeam: {fileID: 824814634}
   m_remotePlayerTeam: {fileID: 479239487}
   m_localPlayerCharacters: []
@@ -23569,6 +23575,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: fef6a023ad094da4fa609111b6173a05, type: 3}
+    - target: {fileID: 5755602365049517967, guid: 204ab6633a51eee4e9e9903e03b8f0d2, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7146173391430565234, guid: 204ab6633a51eee4e9e9903e03b8f0d2, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -23770,6 +23780,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: fef6a023ad094da4fa609111b6173a05, type: 3}
+    - target: {fileID: 5755602365049517967, guid: 204ab6633a51eee4e9e9903e03b8f0d2, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7146173391430565234, guid: 204ab6633a51eee4e9e9903e03b8f0d2, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -24133,7 +24147,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1925965996}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 824814635}
+        m_TargetAssemblyTypeName: LocalPlayerActions, Assembly-CSharp
+        m_MethodName: EndTurn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1925965999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24267,6 +24293,10 @@ PrefabInstance:
       propertyPath: _renderer
       value: 
       objectReference: {fileID: 3487202564478486321}
+    - target: {fileID: 3487202564478486321, guid: 88b090371c4d618429dbb08ba8442415, type: 3}
+      propertyPath: _movementDistance
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4310519534702536598, guid: 88b090371c4d618429dbb08ba8442415, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -24359,6 +24389,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: fef6a023ad094da4fa609111b6173a05, type: 3}
+    - target: {fileID: 5755602365049517967, guid: 204ab6633a51eee4e9e9903e03b8f0d2, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7146173391430565234, guid: 204ab6633a51eee4e9e9903e03b8f0d2, type: 3}
       propertyPath: m_RootOrder
       value: 0

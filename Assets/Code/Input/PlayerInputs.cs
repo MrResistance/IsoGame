@@ -14,7 +14,8 @@ public class PlayerInputs : MonoBehaviour
     public event Action OnSecondaryReleased;
     public event Action OnInteractPressed;
     public event Action OnInteractHeld;
-    public event Action OnInteractReleased;    
+    public event Action OnInteractReleased;
+    public event Action OnCursorMoved;
 
     public Vector2 MoveInput;
     public float ZoomInput;
@@ -47,6 +48,12 @@ public class PlayerInputs : MonoBehaviour
         Controls.Actions.Secondary.canceled += SecondaryReleased;
         Controls.Actions.Interact.performed += InteractPressed;
         Controls.Actions.Interact.canceled += InteractReleased;
+        Controls.Movement.CursorMove.performed += CursorMoved;
+    }
+
+    private void CursorMoved(InputAction.CallbackContext context)
+    {
+        OnCursorMoved?.Invoke();
     }
 
     private void PrimaryPressed(InputAction.CallbackContext context)

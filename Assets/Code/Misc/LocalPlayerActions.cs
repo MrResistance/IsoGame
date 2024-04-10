@@ -9,6 +9,7 @@ public class LocalPlayerActions : MonoBehaviour
 
     [SerializeField] private TransitionUI m_move;
     [SerializeField] private TransitionUI m_attack;
+    [SerializeField] private TransitionUI m_endTurn;
 
     private void Awake()
     {
@@ -22,10 +23,18 @@ public class LocalPlayerActions : MonoBehaviour
         }
     }
 
-    // Start is called before the first frame update
-    void Start()
+    public void ActionsOnScreen()
     {
-        
+        m_attack.TransitionOnScreen();
+        m_move.TransitionOnScreen();
+        m_endTurn.TransitionOnScreen();
+    }
+
+    public void ActionsOffScreen()
+    {
+        m_attack.TransitionOffScreen();
+        m_move.TransitionOffScreen();
+        m_endTurn.TransitionOffScreen();
     }
 
     public void Move()
@@ -36,12 +45,21 @@ public class LocalPlayerActions : MonoBehaviour
 
     public void MovementComplete()
     {
+        m_tileHighlighter.ClearAllTiles();
         m_tileHighlighter.enabled = false;
         m_tileInteractor.enabled = false;
         m_move.TransitionOffScreen();
     }
+
     public void Attack()
     {
         
+    }
+
+    public void EndTurn() 
+    {
+        TurnManager.Instance.CurrentCharacter.EndTurn();
+        TurnManager.Instance.StartNextTurn();
+        ActionsOnScreen();
     }
 }

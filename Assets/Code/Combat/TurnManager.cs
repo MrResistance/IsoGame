@@ -7,6 +7,8 @@ public class TurnManager : MonoBehaviour
     public enum TurnState { LocalPlayer, RemotePlayer };
     public TurnState State;
 
+    [SerializeField] private CameraController m_cameraController;
+
     [SerializeField] private Transform m_localPlayerTeam;
     [SerializeField] private Transform m_remotePlayerTeam;
 
@@ -31,31 +33,54 @@ public class TurnManager : MonoBehaviour
     {
         GetLocalPlayerCharacters();
         GetRemotePlayerCharacters();
-        StartPlayerTurn();
+        StartLocalPlayerTurn(m_localPlayerCharacters[0]);
     }
 
-    public void StartPlayerTurn()
+    public void StartLocalPlayerTurn(Character character)
     {
         State = TurnState.LocalPlayer;
 
-        for (int i = 0; i < m_localPlayerCharacters.Count; i++)
-        {
-            m_localPlayerCharacters[i].ResetActionEconomy();
-        }
+        //for (int i = 0; i < m_localPlayerCharacters.Count; i++)
+        //{
+        //    m_localPlayerCharacters[i].Reset();
+        //}
 
-        CurrentCharacter = m_localPlayerCharacters[0];
+        CurrentCharacter = character;
+        m_cameraController.MoveToPoint(CurrentCharacter.transform.position);
     }
 
-    public void StartEnemyTurn()
+    public void StartRemotePlayerTurn(Character character)
     {
         State = TurnState.RemotePlayer;
 
-        for (int i = 0; i < m_remotePlayerCharacters.Count; i++)
+        //for (int i = 0; i < m_remotePlayerCharacters.Count; i++)
+        //{
+        //    m_remotePlayerCharacters[i].Reset();
+        //}
+
+        CurrentCharacter = character;
+        m_cameraController.MoveToPoint(CurrentCharacter.transform.position);
+    }
+
+    public void StartNextTurn()
+    {
+        for (int i = 0; i < m_localPlayerCharacters.Count; i++)
         {
-            m_remotePlayerCharacters[i].ResetActionEconomy();
+            if (!m_localPlayerCharacters[i].HasEndedTurn)
+            {
+                StartLocalPlayerTurn(m_localPlayerCharacters[i]);
+                return;
+            }
         }
 
-        CurrentCharacter = m_remotePlayerCharacters[0];
+        for (int i = 0; i < m_remotePlayerCharacters.Count; i++)
+        {
+            if (!m_remotePlayerCharacters[i].HasEndedTurn)
+            {
+                StartRemotePlayerTurn(m_remotePlayerCharacters[i]);
+                return;
+            }
+        }
     }
 
     private void GetLocalPlayerCharacters()

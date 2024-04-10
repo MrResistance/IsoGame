@@ -6,12 +6,6 @@ public class TransitionUI : MonoBehaviour
     [SerializeField] private Vector3 m_onScreenPosition;
     [SerializeField] private Vector3 m_offScreenPosition;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     [ContextMenu("Offscreen")]
     public void TransitionOffScreen()
     {

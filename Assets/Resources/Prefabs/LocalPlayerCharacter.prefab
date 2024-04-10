@@ -126,11 +126,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 
-  _renderer: {fileID: 0}
+  _renderer: {fileID: 6174749091053010135}
   _sprite: {fileID: 0}
-  _speed: 0
+  _speed: 10
+  _movementDistance: 1
   m_usedMovement: 0
   m_usedAction: 0
+  HasEndedTurn: 0
 --- !u!114 &4401723191856627756
 MonoBehaviour:
   m_ObjectHideFlags: 0

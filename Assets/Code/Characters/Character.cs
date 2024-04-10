@@ -8,12 +8,13 @@ public class Character : MonoBehaviour
     [SerializeField] protected SpriteRenderer _renderer;
     [SerializeField] protected Sprite _sprite;
     [SerializeField] protected float _speed;
+    [SerializeField] protected float _movementDistance = 1;
 
     [Header("Action Economy")]
     [SerializeField] protected bool m_usedMovement = false;
     [SerializeField] protected bool m_usedAction = false;
+    [SerializeField] public bool HasEndedTurn = false;
 
-    public event Action OnEndTurn;
     // Start is called before the first frame update
     public virtual void Start()
     {
@@ -69,15 +70,16 @@ public class Character : MonoBehaviour
         transform.position = point;
     }
 
-    private void EndTurn()
+    public void EndTurn()
     {
-        OnEndTurn?.Invoke();
+        HasEndedTurn = true;
     }
 
-    public void ResetActionEconomy()
+    public void Reset()
     {
         m_usedMovement = false;
         m_usedAction = false;
+        HasEndedTurn = false;
     }
 
 

@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using System.Collections;
 public class CameraController : MonoBehaviour
 {
     [Header("References"), SerializeField] private Camera m_camera;
@@ -33,5 +33,26 @@ public class CameraController : MonoBehaviour
 
         // Set the camera's orthographic size
         m_camera.orthographicSize = newOrthographicSize;
+    }
+
+    public void MoveToPoint(Vector3 point)
+    {
+        StopAllCoroutines();
+        StartCoroutine(Move(point));
+    }
+
+    private IEnumerator Move(Vector3 point)
+    {
+        // While the distance between the character and the point is greater than a small number
+        while (Vector3.Distance(transform.position, point) > 0.001f)
+        {
+            // Move our position a step closer to the target.
+            transform.position = Vector3.MoveTowards(transform.position, point, m_speed * Time.deltaTime);
+
+            // Yield until the next frame
+            yield return null;
+        }
+
+        transform.position = point;
     }
 }
