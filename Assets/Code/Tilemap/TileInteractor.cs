@@ -4,7 +4,6 @@ using UnityEngine.Tilemaps;
 public class TileInteractor : MonoBehaviour
 {
     [SerializeField] private Tilemap m_tilemap;
-    [SerializeField] private Character m_currentCharacter;
     private void Start()
     {
         PlayerInputs.Instance.OnPrimaryPressed += GetGridCoordinate;
@@ -17,6 +16,6 @@ public class TileInteractor : MonoBehaviour
 
         Vector3Int cellPosition = m_tilemap.WorldToCell(worldPosition);
 
-        //m_currentCharacter.MoveToPoint(m_tilemap.CellToWorld(cellPosition));
+        TurnManager.Instance.CurrentCharacter.MoveToPoint(m_tilemap.CellToWorld(cellPosition));
     }
 }

@@ -10,7 +10,6 @@ public class Damageable : MonoBehaviour
     public event Action<int> OnHit;
     public event Action OnDeath;
 
-    public Vector3 HitPosition;
     private void Start()
     {
         m_currentHitPoints = m_maxHitPoints;

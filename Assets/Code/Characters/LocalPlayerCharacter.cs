@@ -1,4 +1,4 @@
-public class EnemyCharacter : Character
+public class LocalPlayerCharacter : Character
 {
     // Start is called before the first frame update
     public override void Start()

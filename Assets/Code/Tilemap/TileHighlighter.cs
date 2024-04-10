@@ -6,12 +6,9 @@ public class TileHighlighter : MonoBehaviour
     [SerializeField] private Tilemap m_tilemap;
     [SerializeField] private Tile m_tile;
 
-    [SerializeField] private Vector3Int m_currentPosition;
-
     private void FixedUpdate()
     {
         Vector3Int highlightCellPosition = GetCurrentCellUnderCursor();
-        m_currentPosition = highlightCellPosition;
         HighlightTileAt(highlightCellPosition);
     }
 

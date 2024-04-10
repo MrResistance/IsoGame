@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -8,6 +9,11 @@ public class Character : MonoBehaviour
     [SerializeField] protected Sprite _sprite;
     [SerializeField] protected float _speed;
 
+    [Header("Action Economy")]
+    [SerializeField] protected bool m_usedMovement = false;
+    [SerializeField] protected bool m_usedAction = false;
+
+    public event Action OnEndTurn;
     // Start is called before the first frame update
     public virtual void Start()
     {
@@ -16,6 +22,16 @@ public class Character : MonoBehaviour
 
     public void MoveToPoint(Vector3 point)
     {
+        if (m_usedMovement)
+        {
+            return;
+        }
+
+        if (!IsPositionValid())
+        {
+            return;
+        }
+
         if (transform.localPosition.x - point.x > 0)
         {
             _renderer.flipX = true;
@@ -24,8 +40,18 @@ public class Character : MonoBehaviour
         {
             _renderer.flipX = false;
         }
+
         StopAllCoroutines();
         StartCoroutine(Move(point));
+
+        m_usedMovement = true;
+        LocalPlayerActions.Instance.MovementComplete();
+    }
+
+    private bool IsPositionValid()
+    {
+        //TODO Calculate whether player can move in designated spot
+        return true;
     }
 
     private IEnumerator Move(Vector3 point)
@@ -42,4 +68,17 @@ public class Character : MonoBehaviour
 
         transform.position = point;
     }
+
+    private void EndTurn()
+    {
+        OnEndTurn?.Invoke();
+    }
+
+    public void ResetActionEconomy()
+    {
+        m_usedMovement = false;
+        m_usedAction = false;
+    }
+
+
 }
