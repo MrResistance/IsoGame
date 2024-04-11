@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7146173391430565234}
   - component: {fileID: 959084126967948851}
-  - component: {fileID: 5755602365049517967}
+  - component: {fileID: 7607446511739280744}
   - component: {fileID: 6412638218197572328}
   - component: {fileID: 652498048522785772}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: RemotePlayerCharacter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: 4cc523dea23134e4bb3adc1f4631e23e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fef6a023ad094da4fa609111b6173a05, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -87,8 +87,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &5755602365049517967
-BoxCollider2D:
+--- !u!60 &7607446511739280744
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -100,7 +100,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.5}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: -0.1}
@@ -110,9 +110,12 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.47950524, y: -0.24805862}
+      - {x: 0.0010427833, y: 0.006641373}
+      - {x: 0.49905717, y: -0.25087512}
+      - {x: 0.0017774627, y: -0.5023377}
 --- !u!114 &6412638218197572328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -132,6 +135,7 @@ MonoBehaviour:
   _movementDistance: 1
   m_usedMovement: 0
   m_usedAction: 0
+  HasEndedTurn: 0
 --- !u!114 &652498048522785772
 MonoBehaviour:
   m_ObjectHideFlags: 0

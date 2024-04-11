@@ -5,6 +5,7 @@ public class GameSettings : MonoBehaviour
     public static GameSettings Instance;
 
     public LayerMask InteractableLayer;
+    public float GridTileCollisionOffset = 0.25f;
     private void Awake()
     {
         if (Instance == null)

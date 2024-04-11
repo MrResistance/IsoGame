@@ -15,7 +15,6 @@ public class Character : MonoBehaviour
     [SerializeField] protected bool m_usedAction = false;
     [SerializeField] public bool HasEndedTurn = false;
 
-    // Start is called before the first frame update
     public virtual void Start()
     {
         _renderer.sprite = _sprite;
@@ -28,7 +27,7 @@ public class Character : MonoBehaviour
             return;
         }
 
-        if (!IsPositionValid())
+        if (!IsPositionValid(point))
         {
             return;
         }
@@ -49,21 +48,32 @@ public class Character : MonoBehaviour
         LocalPlayerActions.Instance.MovementComplete();
     }
 
-    private bool IsPositionValid()
+    private bool IsPositionValid(Vector3 point)
     {
-        //TODO Calculate whether player can move in designated spot
-        return true;
+        //Offset to ensure that point checked is in center of tiles, stops collision issues.
+        point = new Vector3(point.x, point.y + GameSettings.Instance.GridTileCollisionOffset, point.z);
+
+        if (Physics2D.OverlapPoint(point, GameSettings.Instance.InteractableLayer))
+        {
+            //TODO Provide feedback to player as to why they can't move here
+            return false;
+        }
+
+        if (Vector3.Distance(transform.position, point) < _movementDistance)
+        {
+            //TODO Provide feedback to player as to why they can't move here
+            return true;
+        }
+
+        return false;
     }
 
     private IEnumerator Move(Vector3 point)
     {
-        // While the distance between the character and the point is greater than a small number
         while (Vector3.Distance(transform.position, point) > 0.001f)
         {
-            // Move our position a step closer to the target.
             transform.position = Vector3.MoveTowards(transform.position, point, _speed * Time.deltaTime);
 
-            // Yield until the next frame
             yield return null;
         }
 
