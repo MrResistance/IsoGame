@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -5,8 +6,25 @@ public class TurnManager : MonoBehaviour
 {
     public static TurnManager Instance;
     public enum TurnState { LocalPlayer, RemotePlayer };
-    public TurnState State;
+    private TurnState m_state;
+    public TurnState State
+    {
+        get { return m_state; }
+        set
+        {
+            m_state = value;
+            if (m_state == TurnState.LocalPlayer)
+            {
+                OnTurnStateChanged?.Invoke("Your Turn");
+            }
+            else
+            {
+                OnTurnStateChanged?.Invoke("Enemy Turn");
+            }
+        }
+    }
 
+    public event Action<string> OnTurnStateChanged;
     [SerializeField] private CameraController m_cameraController;
 
     [SerializeField] private Transform m_localPlayerTeam;
@@ -73,11 +91,11 @@ public class TurnManager : MonoBehaviour
             }
         }
 
-        for (int i = 0; i < m_remotePlayerCharacters.Count; i++)
+        for (int j = 0; j < m_remotePlayerCharacters.Count; j++)
         {
-            if (!m_remotePlayerCharacters[i].HasEndedTurn)
+            if (!m_remotePlayerCharacters[j].HasEndedTurn)
             {
-                StartRemotePlayerTurn(m_remotePlayerCharacters[i]);
+                StartRemotePlayerTurn(m_remotePlayerCharacters[j]);
                 return;
             }
         }

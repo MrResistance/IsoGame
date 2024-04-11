@@ -5,7 +5,8 @@ public class ScreenspaceUIManager : MonoBehaviour
 {
     public static ScreenspaceUIManager Instance;
 
-    [SerializeField] private TextMeshProUGUI m_interactText;
+    [SerializeField] private TextMeshProUGUI m_turnStateText;
+    [SerializeField] private TextMeshProUGUI m_characterNameText;
 
     private void Awake()
     {
@@ -19,13 +20,37 @@ public class ScreenspaceUIManager : MonoBehaviour
         }
     }
 
-    public void UpdateInteractText(string text)
+    private void Start()
     {
-        m_interactText.text = text;
+        TurnManager.Instance.OnTurnStateChanged += UpdateTurnStateText;
+    }
+    private void OnEnable()
+    {
+        
     }
 
-    public void ClearInteractText()
+    private void OnDisable()
     {
-        m_interactText.text = "";
+        TurnManager.Instance.OnTurnStateChanged -= UpdateTurnStateText;
+    }
+
+    public void UpdateTurnStateText(string text)
+    {
+        m_turnStateText.text = text;
+    }
+
+    public void ClearTurnStateText()
+    {
+        m_turnStateText.text = "";
+    }
+
+    public void UpdateCharacterNameText(string text)
+    {
+        m_characterNameText.text = text;
+    }
+
+    public void ClearCharacterNameText()
+    {
+        m_characterNameText.text = "";
     }
 }
