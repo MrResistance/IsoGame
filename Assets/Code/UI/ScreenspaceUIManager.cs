@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 
@@ -7,6 +8,7 @@ public class ScreenspaceUIManager : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI m_turnStateText;
     [SerializeField] private TextMeshProUGUI m_characterNameText;
+    [SerializeField] private TextMeshProUGUI m_roundCountText;
 
     private void Awake()
     {
@@ -22,14 +24,21 @@ public class ScreenspaceUIManager : MonoBehaviour
 
     private void Start()
     {
-        TurnManager.Instance.OnTurnStateChanged += UpdateTurnStateText;
-        TurnManager.Instance.OnCurrentCharacterChanged += UpdateCharacterNameText;
+        RoundManager.Instance.OnTurnStateChanged += UpdateTurnStateText;
+        RoundManager.Instance.OnCurrentCharacterChanged += UpdateCharacterNameText;
+        RoundManager.Instance.OnRoundCountChanged += UpdateRoundCountText;
     }
 
     private void OnDisable()
     {
-        TurnManager.Instance.OnTurnStateChanged -= UpdateTurnStateText;
-        TurnManager.Instance.OnCurrentCharacterChanged -= UpdateCharacterNameText;
+        RoundManager.Instance.OnTurnStateChanged -= UpdateTurnStateText;
+        RoundManager.Instance.OnCurrentCharacterChanged -= UpdateCharacterNameText;
+        RoundManager.Instance.OnRoundCountChanged -= UpdateRoundCountText;
+    }
+
+    private void UpdateRoundCountText(int value)
+    {
+        m_roundCountText.text = value.ToString();
     }
 
     public void UpdateTurnStateText(string text)

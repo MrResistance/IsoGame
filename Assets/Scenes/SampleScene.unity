@@ -23172,7 +23172,7 @@ GameObject:
   - component: {fileID: 1264863551}
   - component: {fileID: 1264863550}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: TurnStateText (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23417,6 +23417,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_turnStateText: {fileID: 1264863550}
   m_characterNameText: {fileID: 1397401401}
+  m_roundCountText: {fileID: 480872086}
 --- !u!1 &1319450698
 GameObject:
   m_ObjectHideFlags: 0
@@ -23656,7 +23657,7 @@ GameObject:
   - component: {fileID: 1397401402}
   - component: {fileID: 1397401401}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: CurrentCharacterNameText (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

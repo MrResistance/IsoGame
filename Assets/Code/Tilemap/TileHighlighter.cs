@@ -46,7 +46,7 @@ public class TileHighlighter : MonoBehaviour
             case LocalPlayerActions.ActionSelection.nothing:
                 break;
             case LocalPlayerActions.ActionSelection.movement:
-                if (Vector3.Distance(cellPosition, TurnManager.Instance.CurrentCharacter.transform.position) <= TurnManager.Instance.CurrentCharacter.MovementDistance)
+                if (Vector3.Distance(cellPosition, RoundManager.Instance.CurrentCharacter.transform.position) <= RoundManager.Instance.CurrentCharacter.MovementDistance)
                 {
                     m_tilemap.SetTile(cellPosition, m_HighlightBlue);
                 }

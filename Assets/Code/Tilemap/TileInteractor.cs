@@ -22,10 +22,10 @@ public class TileInteractor : MonoBehaviour
             case LocalPlayerActions.ActionSelection.nothing:
                 break;
             case LocalPlayerActions.ActionSelection.movement:
-                TurnManager.Instance.CurrentCharacter.TryMoveToPoint(m_tilemap.CellToWorld(cellPosition));
+                RoundManager.Instance.CurrentCharacter.TryMoveToPoint(m_tilemap.CellToWorld(cellPosition));
                 break;
             case LocalPlayerActions.ActionSelection.attack:
-                TurnManager.Instance.CurrentCharacter.TryAttack(worldPosition);
+                RoundManager.Instance.CurrentCharacter.TryAttack(worldPosition);
                 break;
             default:
                 break;

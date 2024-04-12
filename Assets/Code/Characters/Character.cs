@@ -14,7 +14,7 @@ public class Character : MonoBehaviour
     [SerializeField] protected bool m_usedAction = false;
     [SerializeField] public bool HasEndedTurn = false;
 
-
+    //TODO Read stats from scriptable object class "CharacterData/CharacterClass"
     [Header("Stats")]
     public int Damage = 1;
     public int AttackRange = 1;
@@ -94,7 +94,7 @@ public class Character : MonoBehaviour
             hitCollider.TryGetComponent(out Damageable damageable);
             if (damageable != null && Vector3.Distance(transform.position, damageable.transform.position) <= AttackRange)
             {
-                damageable.LoseHitPoints(TurnManager.Instance.CurrentCharacter.Damage);
+                damageable.LoseHitPoints(RoundManager.Instance.CurrentCharacter.Damage);
                 m_usedAction = true;
                 LocalPlayerActions.Instance.AttackComplete();
             }

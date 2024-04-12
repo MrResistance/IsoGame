@@ -75,8 +75,8 @@ public class LocalPlayerActions : MonoBehaviour
 
     public void EndTurn() 
     {
-        TurnManager.Instance.CurrentCharacter.EndTurn();
-        TurnManager.Instance.StartNextTurn();
+        RoundManager.Instance.CurrentCharacter.EndTurn();
+        RoundManager.Instance.StartNextTurn();
         ActionsOnScreen();
     }
 }

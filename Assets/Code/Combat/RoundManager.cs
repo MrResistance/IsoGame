@@ -2,9 +2,9 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TurnManager : MonoBehaviour
+public class RoundManager : MonoBehaviour
 {
-    public static TurnManager Instance;
+    public static RoundManager Instance;
     public enum TurnState { LocalPlayer, RemotePlayer };
     private TurnState m_state;
     public TurnState State
@@ -46,6 +46,9 @@ public class TurnManager : MonoBehaviour
     }
 
     public event Action<string> OnCurrentCharacterChanged;
+
+    private int m_roundCount = 1;
+    public event Action<int> OnRoundCountChanged;
     private void Awake()
     {
         if (Instance == null)
@@ -68,12 +71,6 @@ public class TurnManager : MonoBehaviour
     public void StartLocalPlayerTurn(Character character)
     {
         State = TurnState.LocalPlayer;
-
-        //for (int i = 0; i < m_localPlayerCharacters.Count; i++)
-        //{
-        //    m_localPlayerCharacters[i].Reset();
-        //}
-
         CurrentCharacter = character;
         m_cameraController.MoveToPoint(CurrentCharacter.transform.position);
     }
@@ -81,12 +78,6 @@ public class TurnManager : MonoBehaviour
     public void StartRemotePlayerTurn(Character character)
     {
         State = TurnState.RemotePlayer;
-
-        //for (int i = 0; i < m_remotePlayerCharacters.Count; i++)
-        //{
-        //    m_remotePlayerCharacters[i].Reset();
-        //}
-
         CurrentCharacter = character;
         m_cameraController.MoveToPoint(CurrentCharacter.transform.position);
     }
@@ -110,6 +101,25 @@ public class TurnManager : MonoBehaviour
                 return;
             }
         }
+
+        m_roundCount++;
+        OnRoundCountChanged?.Invoke(m_roundCount);
+        ResetCharacterActions();
+    }
+
+    private void ResetCharacterActions()
+    {
+        for (int i = 0; i < m_localPlayerCharacters.Count; i++)
+        {
+            m_localPlayerCharacters[i].Reset();
+        }
+
+        for (int i = 0; i < m_remotePlayerCharacters.Count; i++)
+        {
+            m_remotePlayerCharacters[i].Reset();
+        }
+
+        StartNextTurn();
     }
 
     private void GetLocalPlayerCharacters()
