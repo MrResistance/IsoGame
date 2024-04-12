@@ -25,10 +25,6 @@ public class ScreenspaceUIManager : MonoBehaviour
         TurnManager.Instance.OnTurnStateChanged += UpdateTurnStateText;
         TurnManager.Instance.OnCurrentCharacterChanged += UpdateCharacterNameText;
     }
-    private void OnEnable()
-    {
-        
-    }
 
     private void OnDisable()
     {

@@ -92,6 +92,4 @@ public class Character : MonoBehaviour
         m_usedAction = false;
         HasEndedTurn = false;
     }
-
-
 }
