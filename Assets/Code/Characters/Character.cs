@@ -8,20 +8,24 @@ public class Character : MonoBehaviour
     [SerializeField] protected SpriteRenderer _renderer;
     [SerializeField] protected Sprite _sprite;
     [SerializeField] protected float _speed;
-    [SerializeField] protected float _movementDistance = 1;
 
     [Header("Action Economy")]
     [SerializeField] protected bool m_usedMovement = false;
     [SerializeField] protected bool m_usedAction = false;
     [SerializeField] public bool HasEndedTurn = false;
 
+
+    [Header("Stats")]
+    public int Damage = 1;
+    public int AttackRange = 1;
+    public int MovementDistance = 1;
     public virtual void Start()
     {
         _renderer.sprite = _sprite;
         name = _name;
     }
 
-    public void MoveToPoint(Vector3 point)
+    public void TryMoveToPoint(Vector3 point)
     {
         if (m_usedMovement)
         {
@@ -52,7 +56,7 @@ public class Character : MonoBehaviour
     private bool IsPositionValid(Vector3 point)
     {
         //Offset to ensure that point checked is in center of tiles, stops collision issues.
-        point = new Vector3(point.x, point.y + GameSettings.Instance.GridTileCollisionOffset, point.z);
+        point = new Vector3(point.x, point.y + GameSettings.Instance.GridTileCollisionOffsetY, point.z);
 
         if (Physics2D.OverlapPoint(point, GameSettings.Instance.InteractableLayer))
         {
@@ -60,7 +64,7 @@ public class Character : MonoBehaviour
             return false;
         }
 
-        if (Vector3.Distance(transform.position, point) < _movementDistance)
+        if (Vector3.Distance(transform.position, point) < MovementDistance)
         {
             //TODO Provide feedback to player as to why they can't move here
             return true;
@@ -79,6 +83,21 @@ public class Character : MonoBehaviour
         }
 
         transform.position = point;
+    }
+
+    public void TryAttack(Vector3 position)
+    {
+        Collider2D hitCollider = Physics2D.OverlapPoint(position, GameSettings.Instance.InteractableLayer);
+
+        if (hitCollider != null)
+        {
+            hitCollider.TryGetComponent(out Damageable damageable);
+            if (damageable != null && Vector3.Distance(transform.position, damageable.transform.position) <= AttackRange)
+            {
+                damageable.LoseHitPoints(TurnManager.Instance.CurrentCharacter.Damage);
+                LocalPlayerActions.Instance.AttackComplete();
+            }
+        }
     }
 
     public void EndTurn()

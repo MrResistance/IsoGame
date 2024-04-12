@@ -11,6 +11,10 @@ public class LocalPlayerActions : MonoBehaviour
     [SerializeField] private TransitionUI m_attack;
     [SerializeField] private TransitionUI m_endTurn;
 
+    public enum ActionSelection { nothing, movement, attack }
+
+    public ActionSelection CurrentSelection;
+
     private void Awake()
     {
         if (Instance == null)
@@ -39,12 +43,14 @@ public class LocalPlayerActions : MonoBehaviour
 
     public void Move()
     {
+        CurrentSelection = ActionSelection.movement;
         m_tileHighlighter.enabled = true;
         m_tileInteractor.enabled = true;
     }
 
     public void MovementComplete()
     {
+        CurrentSelection = ActionSelection.nothing;
         m_tileHighlighter.ClearAllTiles();
         m_tileHighlighter.enabled = false;
         m_tileInteractor.enabled = false;
@@ -53,7 +59,18 @@ public class LocalPlayerActions : MonoBehaviour
 
     public void Attack()
     {
-        
+        CurrentSelection = ActionSelection.attack;
+        m_tileHighlighter.enabled = true;
+        m_tileInteractor.enabled = true;
+    }
+
+    public void AttackComplete()
+    {
+        CurrentSelection = ActionSelection.nothing;
+        m_tileHighlighter.ClearAllTiles();
+        m_tileHighlighter.enabled = false;
+        m_tileInteractor.enabled = false;
+        m_attack.TransitionOffScreen();
     }
 
     public void EndTurn() 

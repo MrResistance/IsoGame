@@ -1,3 +1,4 @@
+using System.Drawing;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -16,7 +17,19 @@ public class TileInteractor : MonoBehaviour
 
         Vector3Int cellPosition = m_tilemap.WorldToCell(worldPosition);
 
-        TurnManager.Instance.CurrentCharacter.MoveToPoint(m_tilemap.CellToWorld(cellPosition));
+        switch (LocalPlayerActions.Instance.CurrentSelection)
+        {
+            case LocalPlayerActions.ActionSelection.nothing:
+                break;
+            case LocalPlayerActions.ActionSelection.movement:
+                TurnManager.Instance.CurrentCharacter.TryMoveToPoint(m_tilemap.CellToWorld(cellPosition));
+                break;
+            case LocalPlayerActions.ActionSelection.attack:
+                TurnManager.Instance.CurrentCharacter.TryAttack(worldPosition);
+                break;
+            default:
+                break;
+        }
     }
 
     private void OnDisable()
