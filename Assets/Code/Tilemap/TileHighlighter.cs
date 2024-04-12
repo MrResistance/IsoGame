@@ -32,13 +32,11 @@ public class TileHighlighter : MonoBehaviour
 
     private void HighlightTileAt(Vector3Int cellPosition)
     {
-        if (m_tilemap.GetTile(cellPosition) != m_HighlightWhite)
+        if (m_tilemap.GetTile(cellPosition) == null)
         {
             m_tilemap.ClearAllTiles();
-            m_tilemap.SetTile(cellPosition, m_HighlightWhite);
+            ColorCheck(cellPosition);
         }
-
-        ColorCheck(cellPosition);
     }
 
     private void ColorCheck(Vector3Int cellPosition)

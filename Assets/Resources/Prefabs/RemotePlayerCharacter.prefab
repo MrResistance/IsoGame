@@ -133,11 +133,12 @@ MonoBehaviour:
   _renderer: {fileID: 959084126967948851}
   _sprite: {fileID: 21300000, guid: fef6a023ad094da4fa609111b6173a05, type: 3}
   _speed: 10
-  _movementDistance: 1
   m_usedMovement: 0
   m_usedAction: 0
   HasEndedTurn: 0
   Damage: 1
+  AttackRange: 1
+  MovementDistance: 1
 --- !u!114 &652498048522785772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,7 +219,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 90%
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -245,7 +246,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.5
+  m_fontSize: 36
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
