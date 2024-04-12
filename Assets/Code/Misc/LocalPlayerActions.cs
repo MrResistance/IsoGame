@@ -51,7 +51,6 @@ public class LocalPlayerActions : MonoBehaviour
     public void MovementComplete()
     {
         CurrentSelection = ActionSelection.nothing;
-        m_tileHighlighter.ClearAllTiles();
         m_tileHighlighter.enabled = false;
         m_tileInteractor.enabled = false;
         m_move.TransitionOffScreen();
@@ -67,7 +66,6 @@ public class LocalPlayerActions : MonoBehaviour
     public void AttackComplete()
     {
         CurrentSelection = ActionSelection.nothing;
-        m_tileHighlighter.ClearAllTiles();
         m_tileHighlighter.enabled = false;
         m_tileInteractor.enabled = false;
         m_attack.TransitionOffScreen();
@@ -75,6 +73,8 @@ public class LocalPlayerActions : MonoBehaviour
 
     public void EndTurn() 
     {
+        m_tileHighlighter.enabled = false;
+        m_tileInteractor.enabled = false;
         RoundManager.Instance.CurrentCharacter.EndTurn();
         RoundManager.Instance.StartNextTurn();
         ActionsOnScreen();

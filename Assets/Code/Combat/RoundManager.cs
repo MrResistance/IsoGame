@@ -102,6 +102,7 @@ public class RoundManager : MonoBehaviour
             }
         }
 
+        //If it gets to this point, all characters have taken their turns so increment the round count and start whoever's turn is next
         m_roundCount++;
         OnRoundCountChanged?.Invoke(m_roundCount);
         ResetCharacterActions();

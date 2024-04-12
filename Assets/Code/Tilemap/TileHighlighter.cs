@@ -12,9 +12,11 @@ public class TileHighlighter : MonoBehaviour
     private void OnEnable()
     {
         PlayerInputs.Instance.OnCursorMoved += UpdateTiles;
+        m_tilemap.SetTile(m_tilemap.WorldToCell(RoundManager.Instance.CurrentCharacter.transform.position), m_HighlightWhite);
     }
     private void OnDisable()
     {
+        m_tilemap.ClearAllTiles();
         PlayerInputs.Instance.OnCursorMoved -= UpdateTiles;
     }
     private void UpdateTiles()
@@ -35,6 +37,7 @@ public class TileHighlighter : MonoBehaviour
         if (m_tilemap.GetTile(cellPosition) == null)
         {
             m_tilemap.ClearAllTiles();
+            m_tilemap.SetTile(m_tilemap.WorldToCell(RoundManager.Instance.CurrentCharacter.transform.position), m_HighlightWhite);
             ColorCheck(cellPosition);
         }
     }
@@ -46,7 +49,7 @@ public class TileHighlighter : MonoBehaviour
             case LocalPlayerActions.ActionSelection.nothing:
                 break;
             case LocalPlayerActions.ActionSelection.movement:
-                if (Vector3.Distance(cellPosition, RoundManager.Instance.CurrentCharacter.transform.position) <= RoundManager.Instance.CurrentCharacter.MovementDistance)
+                if (Vector3.Distance(cellPosition, m_tilemap.WorldToCell(RoundManager.Instance.CurrentCharacter.transform.position)) <= RoundManager.Instance.CurrentCharacter.MovementDistance)
                 {
                     m_tilemap.SetTile(cellPosition, m_HighlightBlue);
                 }
@@ -56,6 +59,14 @@ public class TileHighlighter : MonoBehaviour
                 }
                 break;
             case LocalPlayerActions.ActionSelection.attack:
+                if (Vector3.Distance(cellPosition, m_tilemap.WorldToCell(RoundManager.Instance.CurrentCharacter.transform.position)) <= RoundManager.Instance.CurrentCharacter.AttackRange)
+                {
+                    m_tilemap.SetTile(cellPosition, m_HighlightBlue);
+                }
+                else
+                {
+                    m_tilemap.SetTile(cellPosition, m_HighlightRed);
+                }
                 break;
             default:
                 break;
