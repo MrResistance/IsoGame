@@ -5,7 +5,9 @@ using UnityEngine.Tilemaps;
 public class TileHighlighter : MonoBehaviour
 {
     [SerializeField] private Tilemap m_tilemap;
-    [SerializeField] private Tile m_tile;
+    [SerializeField] private Tile m_HighlightWhite;
+    [SerializeField] private Tile m_HighlightRed;
+    [SerializeField] private Tile m_HighlightBlue;
 
     private void OnEnable()
     {
@@ -30,10 +32,35 @@ public class TileHighlighter : MonoBehaviour
 
     private void HighlightTileAt(Vector3Int cellPosition)
     {
-        if (m_tilemap.GetTile(cellPosition) != m_tile)
+        if (m_tilemap.GetTile(cellPosition) != m_HighlightWhite)
         {
             m_tilemap.ClearAllTiles();
-            m_tilemap.SetTile(cellPosition, m_tile);
+            m_tilemap.SetTile(cellPosition, m_HighlightWhite);
+        }
+
+        ColorCheck(cellPosition);
+    }
+
+    private void ColorCheck(Vector3Int cellPosition)
+    {
+        switch (LocalPlayerActions.Instance.CurrentSelection)
+        {
+            case LocalPlayerActions.ActionSelection.nothing:
+                break;
+            case LocalPlayerActions.ActionSelection.movement:
+                if (Vector3.Distance(cellPosition, TurnManager.Instance.CurrentCharacter.transform.position) <= TurnManager.Instance.CurrentCharacter.MovementDistance)
+                {
+                    m_tilemap.SetTile(cellPosition, m_HighlightBlue);
+                }
+                else
+                {
+                    m_tilemap.SetTile(cellPosition, m_HighlightRed);
+                }
+                break;
+            case LocalPlayerActions.ActionSelection.attack:
+                break;
+            default:
+                break;
         }
     }
 

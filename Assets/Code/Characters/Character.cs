@@ -95,6 +95,7 @@ public class Character : MonoBehaviour
             if (damageable != null && Vector3.Distance(transform.position, damageable.transform.position) <= AttackRange)
             {
                 damageable.LoseHitPoints(TurnManager.Instance.CurrentCharacter.Damage);
+                m_usedAction = true;
                 LocalPlayerActions.Instance.AttackComplete();
             }
         }

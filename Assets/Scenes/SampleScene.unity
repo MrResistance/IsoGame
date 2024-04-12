@@ -600,7 +600,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_tilemap: {fileID: 383732541}
-  m_tile: {fileID: 11400000, guid: 21e783797af2bd741b3bf1cb5e29f0d9, type: 2}
+  m_HighlightWhite: {fileID: 11400000, guid: 21e783797af2bd741b3bf1cb5e29f0d9, type: 2}
+  m_HighlightRed: {fileID: 11400000, guid: 5bbad03a26755b74bacf468d70c291c1, type: 2}
+  m_HighlightBlue: {fileID: 11400000, guid: 43f7523cfe44e2c4fbb56f4ed5de05c5, type: 2}
 --- !u!1 &479239486
 GameObject:
   m_ObjectHideFlags: 0
@@ -23533,7 +23535,7 @@ MonoBehaviour:
   InteractableLayer:
     serializedVersion: 2
     m_Bits: 8
-  GridTileCollisionOffset: 0.25
+  GridTileCollisionOffsetY: 0.25
 --- !u!114 &1373235620
 MonoBehaviour:
   m_ObjectHideFlags: 0
