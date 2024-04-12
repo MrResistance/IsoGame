@@ -23,6 +23,7 @@ public class ScreenspaceUIManager : MonoBehaviour
     private void Start()
     {
         TurnManager.Instance.OnTurnStateChanged += UpdateTurnStateText;
+        TurnManager.Instance.OnCurrentCharacterChanged += UpdateCharacterNameText;
     }
     private void OnEnable()
     {
@@ -32,6 +33,7 @@ public class ScreenspaceUIManager : MonoBehaviour
     private void OnDisable()
     {
         TurnManager.Instance.OnTurnStateChanged -= UpdateTurnStateText;
+        TurnManager.Instance.OnCurrentCharacterChanged -= UpdateCharacterNameText;
     }
 
     public void UpdateTurnStateText(string text)

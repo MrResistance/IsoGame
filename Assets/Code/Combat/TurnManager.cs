@@ -25,6 +25,7 @@ public class TurnManager : MonoBehaviour
     }
 
     public event Action<string> OnTurnStateChanged;
+    
     [SerializeField] private CameraController m_cameraController;
 
     [SerializeField] private Transform m_localPlayerTeam;
@@ -33,8 +34,18 @@ public class TurnManager : MonoBehaviour
     [SerializeField] private List<LocalPlayerCharacter> m_localPlayerCharacters;
     [SerializeField] private List<RemotePlayerCharacter> m_remotePlayerCharacters;
 
-    public Character CurrentCharacter;
+    private Character m_currentCharacter;
+    public Character CurrentCharacter
+    {
+        get { return m_currentCharacter; }
+        set
+        {
+            m_currentCharacter = value;
+            OnCurrentCharacterChanged?.Invoke(m_currentCharacter.name);
+        }
+    }
 
+    public event Action<string> OnCurrentCharacterChanged;
     private void Awake()
     {
         if (Instance == null)

@@ -18,6 +18,7 @@ public class Character : MonoBehaviour
     public virtual void Start()
     {
         _renderer.sprite = _sprite;
+        name = _name;
     }
 
     public void MoveToPoint(Vector3 point)
