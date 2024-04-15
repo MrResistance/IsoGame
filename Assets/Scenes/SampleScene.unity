@@ -599,10 +599,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cf89d908a13f3d4a929af0424558635, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_worldPosition: {x: 0, y: 0, z: 0}
+  m_cellPosition: {x: 0, y: 0, z: 0}
   m_tilemap: {fileID: 383732541}
   m_HighlightWhite: {fileID: 11400000, guid: 21e783797af2bd741b3bf1cb5e29f0d9, type: 2}
   m_HighlightRed: {fileID: 11400000, guid: 5bbad03a26755b74bacf468d70c291c1, type: 2}
   m_HighlightBlue: {fileID: 11400000, guid: 43f7523cfe44e2c4fbb56f4ed5de05c5, type: 2}
+  m_debugSquare: {fileID: 0}
 --- !u!1 &479239486
 GameObject:
   m_ObjectHideFlags: 0
@@ -24078,6 +24081,10 @@ PrefabInstance:
       propertyPath: _renderer
       value: 
       objectReference: {fileID: 1473758693}
+    - target: {fileID: 3487202564478486321, guid: 88b090371c4d618429dbb08ba8442415, type: 3}
+      propertyPath: AttackRange
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4310519534702536598, guid: 88b090371c4d618429dbb08ba8442415, type: 3}
       propertyPath: m_RootOrder
       value: 3

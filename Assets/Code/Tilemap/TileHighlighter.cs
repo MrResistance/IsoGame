@@ -1,14 +1,17 @@
 using System;
+using System.Drawing;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
 public class TileHighlighter : MonoBehaviour
 {
+    [SerializeField] private Vector3 m_worldPosition;
+    [SerializeField] private Vector3Int m_cellPosition;
+
     [SerializeField] private Tilemap m_tilemap;
     [SerializeField] private Tile m_HighlightWhite;
     [SerializeField] private Tile m_HighlightRed;
     [SerializeField] private Tile m_HighlightBlue;
-
     private void OnEnable()
     {
         PlayerInputs.Instance.OnCursorMoved += UpdateTiles;
@@ -21,15 +24,14 @@ public class TileHighlighter : MonoBehaviour
     }
     private void UpdateTiles()
     {
-        Vector3Int highlightCellPosition = GetCurrentCellUnderCursor();
-        HighlightTileAt(highlightCellPosition);
+        GetCurrentCellUnderCursor();
+        HighlightTileAt(m_cellPosition);
     }
 
-    private Vector3Int GetCurrentCellUnderCursor()
+    private void GetCurrentCellUnderCursor()
     {
-        Vector3 worldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Vector3Int cellPosition = m_tilemap.WorldToCell(worldPosition);
-        return cellPosition;
+        m_worldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        m_cellPosition = m_tilemap.WorldToCell(m_worldPosition);
     }
 
     private void HighlightTileAt(Vector3Int cellPosition)
@@ -44,12 +46,18 @@ public class TileHighlighter : MonoBehaviour
 
     private void ColorCheck(Vector3Int cellPosition)
     {
+        Vector3 point = m_tilemap.CellToWorld(cellPosition);
+
+        point = new Vector3 (point.x, point.y + GameSettings.Instance.GridTileCollisionOffsetY, point.z);
+       
         switch (LocalPlayerActions.Instance.CurrentSelection)
         {
             case LocalPlayerActions.ActionSelection.nothing:
                 break;
             case LocalPlayerActions.ActionSelection.movement:
-                if (Vector3.Distance(cellPosition, m_tilemap.WorldToCell(RoundManager.Instance.CurrentCharacter.transform.position)) <= RoundManager.Instance.CurrentCharacter.MovementDistance)
+                if (Vector3.Distance(cellPosition, m_tilemap.WorldToCell(RoundManager.Instance.CurrentCharacter.transform.position)) 
+                    <= RoundManager.Instance.CurrentCharacter.MovementDistance
+                    && !Physics2D.OverlapPoint(point, GameSettings.Instance.InteractableLayer))
                 {
                     m_tilemap.SetTile(cellPosition, m_HighlightBlue);
                 }
@@ -59,7 +67,9 @@ public class TileHighlighter : MonoBehaviour
                 }
                 break;
             case LocalPlayerActions.ActionSelection.attack:
-                if (Vector3.Distance(cellPosition, m_tilemap.WorldToCell(RoundManager.Instance.CurrentCharacter.transform.position)) <= RoundManager.Instance.CurrentCharacter.AttackRange)
+                if (Vector3.Distance(cellPosition, m_tilemap.WorldToCell(RoundManager.Instance.CurrentCharacter.transform.position)) 
+                    <= RoundManager.Instance.CurrentCharacter.AttackRange 
+                    && Physics2D.OverlapPoint(point, GameSettings.Instance.InteractableLayer))
                 {
                     m_tilemap.SetTile(cellPosition, m_HighlightBlue);
                 }
