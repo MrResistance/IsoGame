@@ -605,7 +605,6 @@ MonoBehaviour:
   m_HighlightWhite: {fileID: 11400000, guid: 21e783797af2bd741b3bf1cb5e29f0d9, type: 2}
   m_HighlightRed: {fileID: 11400000, guid: 5bbad03a26755b74bacf468d70c291c1, type: 2}
   m_HighlightBlue: {fileID: 11400000, guid: 43f7523cfe44e2c4fbb56f4ed5de05c5, type: 2}
-  m_debugSquare: {fileID: 0}
 --- !u!1 &479239486
 GameObject:
   m_ObjectHideFlags: 0
@@ -24633,6 +24632,10 @@ PrefabInstance:
       propertyPath: _renderer
       value: 
       objectReference: {fileID: 3487202564478486321}
+    - target: {fileID: 3487202564478486321, guid: 88b090371c4d618429dbb08ba8442415, type: 3}
+      propertyPath: MovementDistance
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3487202564478486321, guid: 88b090371c4d618429dbb08ba8442415, type: 3}
       propertyPath: _movementDistance
       value: 1

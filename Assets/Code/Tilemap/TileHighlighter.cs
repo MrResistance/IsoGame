@@ -49,7 +49,7 @@ public class TileHighlighter : MonoBehaviour
         Vector3 point = m_tilemap.CellToWorld(cellPosition);
 
         point = new Vector3 (point.x, point.y + GameSettings.Instance.GridTileCollisionOffsetY, point.z);
-       
+
         switch (LocalPlayerActions.Instance.CurrentSelection)
         {
             case LocalPlayerActions.ActionSelection.nothing:

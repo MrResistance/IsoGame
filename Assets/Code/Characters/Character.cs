@@ -10,7 +10,7 @@ public class Character : MonoBehaviour
     [SerializeField] protected float _speed;
 
     [Header("Action Economy")]
-    [SerializeField] protected bool m_usedMovement = false;
+    [SerializeField] protected int m_movementRemaining = 0;
     [SerializeField] protected bool m_usedAction = false;
     [SerializeField] public bool HasEndedTurn = false;
 
@@ -23,11 +23,12 @@ public class Character : MonoBehaviour
     {
         _renderer.sprite = _sprite;
         name = _name;
+        m_movementRemaining = MovementDistance;
     }
 
     public void TryMoveToPoint(Vector3 point)
     {
-        if (m_usedMovement)
+        if (m_movementRemaining == 0)
         {
             return;
         }
@@ -46,11 +47,16 @@ public class Character : MonoBehaviour
             _renderer.flipX = false;
         }
 
+        m_movementRemaining -= Mathf.RoundToInt(Vector3.Distance(transform.position, point));
+
         StopAllCoroutines();
         StartCoroutine(Move(point));
-
-        m_usedMovement = true;
-        LocalPlayerActions.Instance.MovementComplete();
+        
+        if (m_movementRemaining <= 0)
+        {
+            m_movementRemaining = 0; 
+            LocalPlayerActions.Instance.MovementComplete();
+        }
     }
 
     private bool IsPositionValid(Vector3 point)
@@ -108,7 +114,7 @@ public class Character : MonoBehaviour
 
     public void Reset()
     {
-        m_usedMovement = false;
+        m_movementRemaining = MovementDistance;
         m_usedAction = false;
         HasEndedTurn = false;
     }
