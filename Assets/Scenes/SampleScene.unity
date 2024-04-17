@@ -951,6 +951,7 @@ GameObject:
   - component: {fileID: 561350882}
   - component: {fileID: 561350881}
   - component: {fileID: 561350883}
+  - component: {fileID: 561350884}
   m_Layer: 0
   m_Name: Ground
   m_TagString: Untagged
@@ -993,7 +994,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 52fc4ab06bd6bf94dba6b4d56cdd645f, type: 2}
+  - {fileID: 2100000, guid: 6f7e8663f3d561d44a37fc524d3ae3a4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -22365,6 +22366,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_tilemap: {fileID: 561350882}
+--- !u!114 &561350884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561350879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1d2044946b0aab419fa35af8ee42e29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GreyscaleAmount: 0
+  m_renderer: {fileID: 561350881}
 --- !u!1 &591834094
 GameObject:
   m_ObjectHideFlags: 0
@@ -24765,6 +24780,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: fef6a023ad094da4fa609111b6173a05, type: 3}
+    - target: {fileID: 5146560233104478360, guid: 204ab6633a51eee4e9e9903e03b8f0d2, type: 3}
+      propertyPath: GreyscaleAmount
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5755602365049517967, guid: 204ab6633a51eee4e9e9903e03b8f0d2, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.y
       value: 0.5

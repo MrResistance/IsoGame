@@ -27,6 +27,27 @@ public class LocalPlayerActions : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        if (PlayerInputs.Instance != null)
+        {
+            PlayerInputs.Instance.OnSecondaryPressed += CancelAction;
+        }
+    }
+
+    private void OnEnable()
+    {
+        if (PlayerInputs.Instance != null) 
+        {
+            PlayerInputs.Instance.OnSecondaryPressed += CancelAction;
+        }
+    }
+
+    private void OnDisable()
+    {
+        PlayerInputs.Instance.OnSecondaryPressed -= CancelAction;
+    }
+
     public void ActionsOnScreen()
     {
         m_attack.TransitionOnScreen();
@@ -69,6 +90,13 @@ public class LocalPlayerActions : MonoBehaviour
         m_tileHighlighter.enabled = false;
         m_tileInteractor.enabled = false;
         m_attack.TransitionOffScreen();
+    }
+
+    public void CancelAction()
+    {
+        CurrentSelection = ActionSelection.nothing;
+        m_tileHighlighter.enabled = false;
+        m_tileInteractor.enabled = false;
     }
 
     public void EndTurn() 

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7607446511739280744}
   - component: {fileID: 6412638218197572328}
   - component: {fileID: 652498048522785772}
+  - component: {fileID: 5146560233104478360}
   m_Layer: 3
   m_Name: RemotePlayerCharacter
   m_TagString: Untagged
@@ -56,7 +57,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 6f7e8663f3d561d44a37fc524d3ae3a4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -133,7 +134,7 @@ MonoBehaviour:
   _renderer: {fileID: 959084126967948851}
   _sprite: {fileID: 21300000, guid: fef6a023ad094da4fa609111b6173a05, type: 3}
   _speed: 10
-  m_usedMovement: 0
+  m_movementRemaining: 0
   m_usedAction: 0
   HasEndedTurn: 0
   Damage: 1
@@ -153,6 +154,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_maxHitPoints: 5
   m_currentHitPoints: 0
+--- !u!114 &5146560233104478360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 24771686639130923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1d2044946b0aab419fa35af8ee42e29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GreyscaleAmount: 0
+  m_renderer: {fileID: 959084126967948851}
 --- !u!1 &7470937710258543243
 GameObject:
   m_ObjectHideFlags: 0
