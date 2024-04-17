@@ -23,7 +23,23 @@ public class GreyscaleControl : MonoBehaviour
         ApplyGreyscale();
     }
 
-    void ApplyGreyscale()
+    public void ApplyGreyscale(float amount)
+    {
+        if (m_renderer == null)
+            m_renderer = GetComponent<Renderer>();
+
+        if (m_propBlock == null)
+            m_propBlock = new MaterialPropertyBlock();
+
+        // Get the current value of the material properties
+        m_renderer.GetPropertyBlock(m_propBlock);
+        // Set the greyscale amount
+        m_propBlock.SetFloat("_Greyscale", amount);
+        // Apply the modified property block to the renderer
+        m_renderer.SetPropertyBlock(m_propBlock);
+    }
+
+    public void ApplyGreyscale()
     {
         if (m_renderer == null)
             m_renderer = GetComponent<Renderer>();

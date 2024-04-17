@@ -12,6 +12,8 @@ public class TileHighlighter : MonoBehaviour
     [SerializeField] private Tile m_HighlightWhite;
     [SerializeField] private Tile m_HighlightRed;
     [SerializeField] private Tile m_HighlightBlue;
+    [SerializeField] private Character m_highlightedCharacter;
+    [SerializeField] private GreyscaleControl m_highlightedCharacterGreyscale;
     private void OnEnable()
     {
         PlayerInputs.Instance.OnCursorMoved += UpdateTiles;
@@ -19,6 +21,7 @@ public class TileHighlighter : MonoBehaviour
     }
     private void OnDisable()
     {
+        m_highlightedCharacter.DisableAboveHeadSprite();
         m_tilemap.ClearAllTiles();
         PlayerInputs.Instance.OnCursorMoved -= UpdateTiles;
     }
@@ -48,14 +51,16 @@ public class TileHighlighter : MonoBehaviour
     {
         Vector3 point = m_tilemap.CellToWorld(cellPosition);
 
-        point = new Vector3 (point.x, point.y + GameSettings.Instance.GridTileCollisionOffsetY, point.z);
+        point = new Vector3(point.x, point.y + GameSettings.Instance.GridTileCollisionOffsetY, point.z);
+
+        Collider2D hitCollider = Physics2D.OverlapPoint(point, GameSettings.Instance.InteractableLayer);
 
         switch (LocalPlayerActions.Instance.CurrentSelection)
         {
             case LocalPlayerActions.ActionSelection.nothing:
                 break;
             case LocalPlayerActions.ActionSelection.movement:
-                if (Vector3.Distance(cellPosition, m_tilemap.WorldToCell(RoundManager.Instance.CurrentCharacter.transform.position)) 
+                if (Vector3.Distance(cellPosition, m_tilemap.WorldToCell(RoundManager.Instance.CurrentCharacter.transform.position))
                     <= RoundManager.Instance.CurrentCharacter.MovementDistance
                     && !Physics2D.OverlapPoint(point, GameSettings.Instance.InteractableLayer))
                 {
@@ -67,14 +72,32 @@ public class TileHighlighter : MonoBehaviour
                 }
                 break;
             case LocalPlayerActions.ActionSelection.attack:
-                if (Vector3.Distance(cellPosition, m_tilemap.WorldToCell(RoundManager.Instance.CurrentCharacter.transform.position)) 
-                    <= RoundManager.Instance.CurrentCharacter.AttackRange 
-                    && Physics2D.OverlapPoint(point, GameSettings.Instance.InteractableLayer))
+                if (Vector3.Distance(cellPosition, m_tilemap.WorldToCell(RoundManager.Instance.CurrentCharacter.transform.position))
+                    <= RoundManager.Instance.CurrentCharacter.AttackRange
+                    && hitCollider != null)
                 {
+                    hitCollider.TryGetComponent(out Character character);
+                    m_highlightedCharacter = character;
+                    m_highlightedCharacter.DisplayTargetedSprite();
+
+                    m_highlightedCharacter.TryGetComponent(out GreyscaleControl greyscaleControl);
+                    m_highlightedCharacterGreyscale = greyscaleControl;
+                    m_highlightedCharacterGreyscale.ApplyGreyscale(0);
+
                     m_tilemap.SetTile(cellPosition, m_HighlightBlue);
                 }
                 else
                 {
+                    if (m_highlightedCharacter != null)
+                    {
+                        m_highlightedCharacter.DisableAboveHeadSprite();
+                    }
+
+                    if (m_highlightedCharacterGreyscale != null)
+                    {
+                        m_highlightedCharacterGreyscale.ApplyGreyscale(1);
+                    }
+
                     m_tilemap.SetTile(cellPosition, m_HighlightRed);
                 }
                 break;

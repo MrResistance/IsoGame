@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class LocalPlayerActions : MonoBehaviour
@@ -11,6 +12,8 @@ public class LocalPlayerActions : MonoBehaviour
     [SerializeField] private TransitionUI m_attack;
     [SerializeField] private TransitionUI m_endTurn;
 
+    [SerializeField] private GreyscaleControl m_ground;
+    [SerializeField] private List<GreyscaleControl> m_characters;
     public enum ActionSelection { nothing, movement, attack }
 
     public ActionSelection CurrentSelection;
@@ -31,7 +34,7 @@ public class LocalPlayerActions : MonoBehaviour
     {
         if (PlayerInputs.Instance != null)
         {
-            PlayerInputs.Instance.OnSecondaryPressed += CancelAction;
+            PlayerInputs.Instance.OnSecondaryPressed += ActionComplete;
         }
     }
 
@@ -39,13 +42,13 @@ public class LocalPlayerActions : MonoBehaviour
     {
         if (PlayerInputs.Instance != null) 
         {
-            PlayerInputs.Instance.OnSecondaryPressed += CancelAction;
+            PlayerInputs.Instance.OnSecondaryPressed += ActionComplete;
         }
     }
 
     private void OnDisable()
     {
-        PlayerInputs.Instance.OnSecondaryPressed -= CancelAction;
+        PlayerInputs.Instance.OnSecondaryPressed -= ActionComplete;
     }
 
     public void ActionsOnScreen()
@@ -67,13 +70,13 @@ public class LocalPlayerActions : MonoBehaviour
         CurrentSelection = ActionSelection.movement;
         m_tileHighlighter.enabled = true;
         m_tileInteractor.enabled = true;
+        ChangeCharacterListGreyscale(1);
+        ChangeCurrentCharacterGreyscale(0);
     }
 
     public void MovementComplete()
     {
-        CurrentSelection = ActionSelection.nothing;
-        m_tileHighlighter.enabled = false;
-        m_tileInteractor.enabled = false;
+        ActionComplete();
         m_move.TransitionOffScreen();
     }
 
@@ -82,21 +85,27 @@ public class LocalPlayerActions : MonoBehaviour
         CurrentSelection = ActionSelection.attack;
         m_tileHighlighter.enabled = true;
         m_tileInteractor.enabled = true;
+        RoundManager.Instance.CurrentCharacter.DisplayAttackngSprite();
+        ChangeCharacterListGreyscale(1);
+        ChangeCurrentCharacterGreyscale(0);
     }
-
+    
     public void AttackComplete()
     {
-        CurrentSelection = ActionSelection.nothing;
-        m_tileHighlighter.enabled = false;
-        m_tileInteractor.enabled = false;
+        ActionComplete();   
         m_attack.TransitionOffScreen();
     }
 
-    public void CancelAction()
+    /// <summary>
+    /// Shares functionality with cancelling an action I.E. if a player changes their mind and wants to do something else
+    /// </summary>
+    public void ActionComplete()
     {
+        RoundManager.Instance.CurrentCharacter.DisableAboveHeadSprite();
         CurrentSelection = ActionSelection.nothing;
         m_tileHighlighter.enabled = false;
         m_tileInteractor.enabled = false;
+        ChangeCharacterListGreyscale(0);
     }
 
     public void EndTurn() 
@@ -105,6 +114,26 @@ public class LocalPlayerActions : MonoBehaviour
         m_tileInteractor.enabled = false;
         RoundManager.Instance.CurrentCharacter.EndTurn();
         RoundManager.Instance.StartNextTurn();
+        ChangeCharacterListGreyscale(0);
         ActionsOnScreen();
+    }
+
+    private void ChangeCharacterListGreyscale(float amount)
+    {
+        for (int i = 0; i < m_characters.Count; i++)
+        {
+            m_characters[i].ApplyGreyscale(amount);
+        }
+    }
+
+    private void ChangeCurrentCharacterGreyscale(float amount)
+    {
+        for (int i = 0; i < m_characters.Count; i++)
+        {
+            if (m_characters[i].gameObject == RoundManager.Instance.CurrentCharacter.gameObject)
+            {
+                m_characters[i].ApplyGreyscale(amount);
+            }
+        }
     }
 }

@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class Character : MonoBehaviour
 {
+    [Header("References")]
     [SerializeField] protected string _name;
     [SerializeField] protected SpriteRenderer _renderer;
     [SerializeField] protected Sprite _sprite;
     [SerializeField] protected float _speed;
+    
+    [SerializeField] private SpriteRenderer m_aboveHeadRenderer;
+    [SerializeField] private Sprite m_attackingSprite;
+    [SerializeField] private Sprite m_targetedSprite;
 
     [Header("Action Economy")]
     [SerializeField] protected int m_movementRemaining = 0;
@@ -24,6 +29,7 @@ public class Character : MonoBehaviour
         _renderer.sprite = _sprite;
         name = _name;
         m_movementRemaining = MovementDistance;
+        m_aboveHeadRenderer.enabled = false;
     }
 
     public void TryMoveToPoint(Vector3 point)
@@ -117,5 +123,26 @@ public class Character : MonoBehaviour
         m_movementRemaining = MovementDistance;
         m_usedAction = false;
         HasEndedTurn = false;
+    }
+
+    public void DisplayAboveHeadSprite(Sprite sprite)
+    {
+        m_aboveHeadRenderer.enabled = true;
+        m_aboveHeadRenderer.sprite = sprite;
+    }
+
+    public void DisplayTargetedSprite()
+    {
+        DisplayAboveHeadSprite(m_targetedSprite);
+    }
+
+    public void DisplayAttackngSprite()
+    {
+        DisplayAboveHeadSprite(m_attackingSprite);
+    }
+
+    public void DisableAboveHeadSprite()
+    {
+        m_aboveHeadRenderer.enabled = false;
     }
 }
