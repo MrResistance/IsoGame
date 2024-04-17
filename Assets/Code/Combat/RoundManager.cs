@@ -42,6 +42,7 @@ public class RoundManager : MonoBehaviour
         {
             m_currentCharacter = value;
             OnCurrentCharacterChanged?.Invoke(m_currentCharacter.name);
+            m_currentCharacter.StartTurn();
         }
     }
 

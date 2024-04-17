@@ -101,7 +101,7 @@ public class LocalPlayerActions : MonoBehaviour
     /// </summary>
     public void ActionComplete()
     {
-        RoundManager.Instance.CurrentCharacter.DisableAboveHeadSprite();
+        RoundManager.Instance.CurrentCharacter.DisableOverheadSprite();
         CurrentSelection = ActionSelection.nothing;
         m_tileHighlighter.enabled = false;
         m_tileInteractor.enabled = false;

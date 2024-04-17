@@ -10,8 +10,11 @@ public class Character : MonoBehaviour
     [SerializeField] protected SpriteRenderer _renderer;
     [SerializeField] protected Sprite _sprite;
     [SerializeField] protected float _speed;
-    
-    [SerializeField] private SpriteRenderer m_aboveHeadRenderer;
+
+    [Header("Sprites")]
+    public int BaseSortOrder = 0;
+    public int ActiveSortOrder = 1;
+    [SerializeField] private SpriteRenderer m_overheadRenderer;
     [SerializeField] private Sprite m_attackingSprite;
     [SerializeField] private Sprite m_targetedSprite;
 
@@ -28,9 +31,18 @@ public class Character : MonoBehaviour
     public virtual void Start()
     {
         _renderer.sprite = _sprite;
+        _renderer.sortingOrder = BaseSortOrder;
+        m_overheadRenderer.sortingOrder = BaseSortOrder;
+        m_overheadRenderer.enabled = false;
+
         name = _name;
         MovementRemaining = MovementDistance;
-        m_aboveHeadRenderer.enabled = false;
+    }
+
+    public void StartTurn()
+    {
+        _renderer.sortingOrder = ActiveSortOrder;
+        m_overheadRenderer.sortingOrder = ActiveSortOrder;
     }
 
     public void TryMoveToPoint(Vector3 point)
@@ -117,6 +129,8 @@ public class Character : MonoBehaviour
     public void EndTurn()
     {
         HasEndedTurn = true;
+        _renderer.sortingOrder = BaseSortOrder;
+        m_overheadRenderer.sortingOrder = BaseSortOrder;
     }
 
     public void Reset()
@@ -126,24 +140,24 @@ public class Character : MonoBehaviour
         HasEndedTurn = false;
     }
 
-    public void DisplayAboveHeadSprite(Sprite sprite)
+    public void DisplayOverheadSprite(Sprite sprite)
     {
-        m_aboveHeadRenderer.enabled = true;
-        m_aboveHeadRenderer.sprite = sprite;
+        m_overheadRenderer.enabled = true;
+        m_overheadRenderer.sprite = sprite;
     }
 
     public void DisplayTargetedSprite()
     {
-        DisplayAboveHeadSprite(m_targetedSprite);
+        DisplayOverheadSprite(m_targetedSprite);
     }
 
     public void DisplayAttackngSprite()
     {
-        DisplayAboveHeadSprite(m_attackingSprite);
+        DisplayOverheadSprite(m_attackingSprite);
     }
 
-    public void DisableAboveHeadSprite()
+    public void DisableOverheadSprite()
     {
-        m_aboveHeadRenderer.enabled = false;
+        m_overheadRenderer.enabled = false;
     }
 }

@@ -23,7 +23,7 @@ public class TileHighlighter : MonoBehaviour
     {
         if (m_highlightedCharacter != null)
         {
-            m_highlightedCharacter.DisableAboveHeadSprite();
+            m_highlightedCharacter.DisableOverheadSprite();
         }
         
         m_tilemap.ClearAllTiles();
@@ -53,11 +53,31 @@ public class TileHighlighter : MonoBehaviour
 
     private void ColorCheck(Vector3Int cellPosition)
     {
+        //To ensure that the overhead sprites are disabled when the player moves away from the character
+        if (m_highlightedCharacter != null)
+        {
+            m_highlightedCharacter.DisableOverheadSprite();
+            m_highlightedCharacter.TryGetComponent(out SpriteRenderer renderer);
+            renderer.sortingOrder = m_highlightedCharacter.BaseSortOrder;
+        }
+
         Vector3 point = m_tilemap.CellToWorld(cellPosition);
 
         point = new Vector3(point.x, point.y + GameSettings.Instance.GridTileCollisionOffsetY, point.z);
 
         Collider2D hitCollider = Physics2D.OverlapPoint(point, GameSettings.Instance.InteractableLayer);
+
+        if (hitCollider != null)
+        {
+            if (hitCollider.TryGetComponent(out Character character))
+            {
+                m_highlightedCharacter = character;
+            }
+        }
+        else
+        {
+            m_highlightedCharacter = null;
+        }
 
         switch (LocalPlayerActions.Instance.CurrentSelection)
         {
@@ -78,23 +98,26 @@ public class TileHighlighter : MonoBehaviour
             case LocalPlayerActions.ActionSelection.attack:
                 if (Vector3.Distance(cellPosition, m_tilemap.WorldToCell(RoundManager.Instance.CurrentCharacter.transform.position))
                     <= RoundManager.Instance.CurrentCharacter.AttackRange
-                    && hitCollider != null)
+                    && m_highlightedCharacter != null)
                 {
-                    hitCollider.TryGetComponent(out Character character);
-                    m_highlightedCharacter = character;
-                    m_highlightedCharacter.DisplayTargetedSprite();
+                    if (m_highlightedCharacter.TryGetComponent(out RemotePlayerCharacter _))
+                    {
+                        m_highlightedCharacter.TryGetComponent(out SpriteRenderer renderer);
+                        renderer.sortingOrder = m_highlightedCharacter.ActiveSortOrder;
+                        m_highlightedCharacter.DisplayTargetedSprite();
 
-                    m_highlightedCharacter.TryGetComponent(out GreyscaleControl greyscaleControl);
-                    m_highlightedCharacterGreyscale = greyscaleControl;
-                    m_highlightedCharacterGreyscale.ApplyGreyscale(0);
+                        m_highlightedCharacter.TryGetComponent(out GreyscaleControl greyscaleControl);
+                        m_highlightedCharacterGreyscale = greyscaleControl;
+                        m_highlightedCharacterGreyscale.ApplyGreyscale(0);
 
-                    m_tilemap.SetTile(cellPosition, m_HighlightBlue);
+                        m_tilemap.SetTile(cellPosition, m_HighlightBlue);
+                    }
                 }
                 else
                 {
                     if (m_highlightedCharacter != null)
                     {
-                        m_highlightedCharacter.DisableAboveHeadSprite();
+                        m_highlightedCharacter.DisableOverheadSprite();
                     }
 
                     if (m_highlightedCharacterGreyscale != null)
