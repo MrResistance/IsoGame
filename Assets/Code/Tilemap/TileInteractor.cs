@@ -32,10 +32,6 @@ public class TileInteractor : MonoBehaviour
         }
     }
 
-
-    /// <summary>
-    ///  Dale
-    /// </summary>
     private void OnDisable()
     {
         PlayerInputs.Instance.OnPrimaryPressed -= GetGridCoordinate;
