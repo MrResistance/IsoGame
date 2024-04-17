@@ -21,7 +21,11 @@ public class TileHighlighter : MonoBehaviour
     }
     private void OnDisable()
     {
-        m_highlightedCharacter.DisableAboveHeadSprite();
+        if (m_highlightedCharacter != null)
+        {
+            m_highlightedCharacter.DisableAboveHeadSprite();
+        }
+        
         m_tilemap.ClearAllTiles();
         PlayerInputs.Instance.OnCursorMoved -= UpdateTiles;
     }
@@ -61,7 +65,7 @@ public class TileHighlighter : MonoBehaviour
                 break;
             case LocalPlayerActions.ActionSelection.movement:
                 if (Vector3.Distance(cellPosition, m_tilemap.WorldToCell(RoundManager.Instance.CurrentCharacter.transform.position))
-                    <= RoundManager.Instance.CurrentCharacter.MovementDistance
+                    <= RoundManager.Instance.CurrentCharacter.MovementRemaining
                     && !Physics2D.OverlapPoint(point, GameSettings.Instance.InteractableLayer))
                 {
                     m_tilemap.SetTile(cellPosition, m_HighlightBlue);

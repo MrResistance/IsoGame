@@ -303,7 +303,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 824814635}
         m_TargetAssemblyTypeName: LocalPlayerActions, Assembly-CSharp
-        m_MethodName: Move
+        m_MethodName: EnableMovement
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -605,6 +605,8 @@ MonoBehaviour:
   m_HighlightWhite: {fileID: 11400000, guid: 21e783797af2bd741b3bf1cb5e29f0d9, type: 2}
   m_HighlightRed: {fileID: 11400000, guid: 5bbad03a26755b74bacf468d70c291c1, type: 2}
   m_HighlightBlue: {fileID: 11400000, guid: 43f7523cfe44e2c4fbb56f4ed5de05c5, type: 2}
+  m_highlightedCharacter: {fileID: 0}
+  m_highlightedCharacterGreyscale: {fileID: 0}
 --- !u!1 &479239486
 GameObject:
   m_ObjectHideFlags: 0
@@ -23032,7 +23034,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 824814635}
         m_TargetAssemblyTypeName: LocalPlayerActions, Assembly-CSharp
-        m_MethodName: Attack
+        m_MethodName: EnableAttacking
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

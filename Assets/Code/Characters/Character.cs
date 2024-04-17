@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using UnityEditor.Rendering;
 using UnityEngine;
 
 public class Character : MonoBehaviour
@@ -15,7 +16,7 @@ public class Character : MonoBehaviour
     [SerializeField] private Sprite m_targetedSprite;
 
     [Header("Action Economy")]
-    [SerializeField] protected int m_movementRemaining = 0;
+    [SerializeField] public int MovementRemaining = 0;
     [SerializeField] protected bool m_usedAction = false;
     [SerializeField] public bool HasEndedTurn = false;
 
@@ -28,13 +29,13 @@ public class Character : MonoBehaviour
     {
         _renderer.sprite = _sprite;
         name = _name;
-        m_movementRemaining = MovementDistance;
+        MovementRemaining = MovementDistance;
         m_aboveHeadRenderer.enabled = false;
     }
 
     public void TryMoveToPoint(Vector3 point)
     {
-        if (m_movementRemaining == 0)
+        if (MovementRemaining == 0)
         {
             return;
         }
@@ -53,14 +54,14 @@ public class Character : MonoBehaviour
             _renderer.flipX = false;
         }
 
-        m_movementRemaining -= Mathf.RoundToInt(Vector3.Distance(transform.position, point));
+        MovementRemaining -= Mathf.RoundToInt(Vector3.Distance(transform.position, point) * 2);
 
         StopAllCoroutines();
         StartCoroutine(Move(point));
         
-        if (m_movementRemaining <= 0)
+        if (MovementRemaining <= 0)
         {
-            m_movementRemaining = 0; 
+            MovementRemaining = 0; 
             LocalPlayerActions.Instance.MovementComplete();
         }
     }
@@ -120,7 +121,7 @@ public class Character : MonoBehaviour
 
     public void Reset()
     {
-        m_movementRemaining = MovementDistance;
+        MovementRemaining = MovementDistance;
         m_usedAction = false;
         HasEndedTurn = false;
     }

@@ -65,7 +65,7 @@ public class LocalPlayerActions : MonoBehaviour
         m_endTurn.TransitionOffScreen();
     }
 
-    public void Move()
+    public void EnableMovement()
     {
         CurrentSelection = ActionSelection.movement;
         m_tileHighlighter.enabled = true;
@@ -80,7 +80,7 @@ public class LocalPlayerActions : MonoBehaviour
         m_move.TransitionOffScreen();
     }
 
-    public void Attack()
+    public void EnableAttacking()
     {
         CurrentSelection = ActionSelection.attack;
         m_tileHighlighter.enabled = true;
