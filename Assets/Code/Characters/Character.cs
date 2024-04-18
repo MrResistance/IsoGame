@@ -119,6 +119,7 @@ public class Character : MonoBehaviour
             hitCollider.TryGetComponent(out Damageable damageable);
             if (damageable != null && Vector3.Distance(transform.position, damageable.transform.position) <= AttackRange)
             {
+                ScreenShake.Instance.TriggerShake(0.1f, 0.01f, 0.01f);
                 damageable.LoseHitPoints(RoundManager.Instance.CurrentCharacter.Damage);
                 m_usedAction = true;
                 LocalPlayerActions.Instance.AttackComplete();

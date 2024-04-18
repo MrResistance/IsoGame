@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class ScreenShake : MonoBehaviour
@@ -22,7 +23,6 @@ public class ScreenShake : MonoBehaviour
 
     private Vector3 initialPosition;
     private Quaternion initialRotation;
-    private float currentShakeDuration;
 
     void Start()
     {
@@ -30,36 +30,33 @@ public class ScreenShake : MonoBehaviour
         initialRotation = transform.localRotation;
     }
 
-    void Update()
+    private IEnumerator Shake(float duration, float magnitude, float rotationMagnitude)
     {
-        if (currentShakeDuration > 0)
-        {
-            transform.localPosition = initialPosition + Random.insideUnitSphere * shakeMagnitude;
+        float elapsed = 0.0f;
 
-            // Create a random rotation that respects the rotateMagnitude
-            Quaternion randomRotation = new Quaternion(
-                Random.Range(-rotateMagnitude, rotateMagnitude),
-                Random.Range(-rotateMagnitude, rotateMagnitude),
-                Random.Range(-rotateMagnitude, rotateMagnitude),
+        while (elapsed < duration)
+        {
+            transform.localPosition = initialPosition + new Vector3 (Random.insideUnitCircle.x, Random.insideUnitCircle.y, 0) * magnitude;
+
+            Quaternion randomRotation = new Quaternion(0, 0,
+                Random.Range(-rotationMagnitude, rotationMagnitude),
                 1).normalized;
 
-            // Apply this rotation to the initial rotation
             transform.localRotation = initialRotation * randomRotation;
 
-            currentShakeDuration -= Time.deltaTime;
+            elapsed += Time.deltaTime;
+            yield return null;
         }
-        else
-        {
-            currentShakeDuration = 0f;
-            transform.localPosition = initialPosition;
-            transform.localRotation = initialRotation;
-        }
+
+        transform.localPosition = initialPosition;
+        transform.localRotation = initialRotation;
     }
 
     public void TriggerShake(float duration, float magnitude, float rotationMagnitude)
     {
-        rotateMagnitude = rotationMagnitude;
-        shakeMagnitude = magnitude;
-        currentShakeDuration = duration;
+        initialPosition = transform.localPosition;
+        initialRotation = transform.localRotation;
+
+        StartCoroutine(Shake(duration, magnitude, rotationMagnitude));
     }
 }

@@ -146,7 +146,7 @@ GameObject:
   - component: {fileID: 163959906907860578}
   - component: {fileID: 1088471562678279745}
   m_Layer: 3
-  m_Name: AboveHeadSprite
+  m_Name: OverheadSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -354,9 +354,9 @@ MonoBehaviour:
   _renderer: {fileID: 6174749091053010135}
   _sprite: {fileID: 0}
   _speed: 10
-  m_baseSortOrder: 0
-  m_activeSortOrder: 1
-  m_aboveHeadRenderer: {fileID: 1088471562678279745}
+  BaseSortOrder: 0
+  ActiveSortOrder: 1
+  m_overheadRenderer: {fileID: 1088471562678279745}
   m_attackingSprite: {fileID: 21300000, guid: 923b4014d92759f45a4e32e19daa940c, type: 3}
   m_targetedSprite: {fileID: -1154573494, guid: 37186fc5679495f41a4395c929ac82ca, type: 3}
   MovementRemaining: 0
